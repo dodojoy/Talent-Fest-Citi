@@ -1,8 +1,7 @@
 {
-  "homepage": "https://dodojoy.github.io/SAP008-social-network",
-  "name": "social-network",
+  "name": "talent-fest-citi",
   "version": "1.0.0",
-  "description": "Social Network @ Laboratoria",
+  "description": "Talent Fest Citi/SAP008",
   "main": "src/index.html",
   "keywords": [
     "javascript",

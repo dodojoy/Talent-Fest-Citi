@@ -20,7 +20,8 @@ export default () => {
                         <li>Headset</li>
                         <li>Webcam</li>
                         <li>Mousepad</li>
-
+                        
+        </body>
 
   `;
 
@@ -28,3 +29,4 @@ export default () => {
   return container;
 
 }
+

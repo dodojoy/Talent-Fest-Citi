@@ -5,36 +5,36 @@ import register from './pages/register/main.js';
 import qrcode from './pages/qrcode/main.js';
 import products from './pages/products/main.js';
 
-const main = document.querySelector('#app');
+const main = document.querySelector('#root');
 
 function loadRoots() {
-    main.innerHTML = '';
-    switch (window.location.hash) {
-        case '#homepage':
-          main.appendChild(homepage());
-          break;
-        case '#login':
-          main.appendChild(login());
-          break;
-        case '#register':
-          main.appendChild(register());
-          break;
-        case '#products':
-          main.appendChild(products());
-          break;
-        case '#cart':
-          main.appendChild(cart());
-          break;
-        case '#qrcode':
-          main.appendChild(qrcode());
-          break;
-        default:
-          main.appendChild(homepage());
-      }
+  main.innerHTML = '';
+  switch (window.location.hash) {
+    case '':
+      main.appendChild(homepage());
+      break;
+    case '#login':
+      main.appendChild(login());
+      break;
+    case '#register':
+      main.appendChild(register());
+      break;
+    case '#products':
+      main.appendChild(products());
+      break;
+    case '#cart':
+      main.appendChild(cart());
+      break;
+    case '#qrcode':
+      main.appendChild(qrcode());
+      break;
+    default:
+      main.appendChild(homepage());
+  }
 }
 
 window.addEventListener('hashchange', loadRoots);
 
 window.addEventListener('load', () => {
-    loadRoots();
-  });
+  loadRoots();
+});

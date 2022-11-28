@@ -4,10 +4,10 @@ export default () => {
     const templateProducts = `
         <header>
             <nav>
-                <img src='../src/assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
+                <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
                     um arco vermelho em cima da palavra'>
-                <a href='#login'><img src='..assets/login.png' alt='Botão branco de redirecionamento à página de login'>Faça login ou cadastre-se</a>
-                <a href='#cart'><img src='..assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
+                <a href='#login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'>Faça login ou cadastre-se</a>
+                <a href='#cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
             </nav>
         </header>
         <body>
@@ -29,7 +29,7 @@ export default () => {
             </main>
         </body>
         <footer>
-            <img src='.assets/logo-citi.png' Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
+            <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
             um arco vermelho em cima da palavra'>
             <p>© 20xx Citigroup Inc. Todos os direitos reservados.</p>
             

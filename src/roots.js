@@ -1,4 +1,4 @@
-// import homepage from './pages/homepage/main.js';
+import homepage from './pages/homepage/main.js';
 // import cart from './pages/cart/main.js';
 import login from './pages/login/main.js';
 // import register from './pages/register/main.js';
@@ -10,9 +10,9 @@ const main = document.querySelector('#root');
 function loadRoots() {
   main.innerHTML = '';
   switch (window.location.hash) {
-    // case '':
-    //   main.appendChild(homepage());
-    //   break;
+     case '#homepage':
+       main.appendChild(homepage());
+      break;
     case '#login':
       main.appendChild(login());
       break;

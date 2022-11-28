@@ -1,3 +1,5 @@
+import { initializeApp } from './exports.js';
+
 const firebaseConfig = {
     apiKey: "AIzaSyCaNoB6Z2c9Sng5aMoVDxRm8IX0lF6JKP4",
     authDomain: "citi-shop-c955b.firebaseapp.com",
@@ -8,4 +10,4 @@ const firebaseConfig = {
     measurementId: "G-K7NS6KPMBF"
   };
 
-  export default firebaseConfig;
+  export const app = initializeApp(firebaseConfig);

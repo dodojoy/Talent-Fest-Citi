@@ -1,0 +1,63 @@
+.form-input{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 2.5vh;
+    margin: 4vh 0 0 7vw;
+    width: 85vw;
+    padding: 0.3vh;
+}
+
+.input-name, .input-password-confirm{
+    height: 6vh;
+    border-radius: 1px;
+    border: 0.10rem solid #002D72;
+    align-items: center;
+}
+
+#btn-register {
+    height: 6vh;
+    padding: 0.3vh 0.3vw;
+    margin: 0 0 1vh 0;
+    background-color: #002D72; 
+    border: none;
+    color: white;
+}
+#btn-register:hover{
+    background-color: #00BDF2;
+}
+
+.account {
+    margin: 10vh 0 0 28vw;
+}
+
+#btn-pag-login{
+    margin: 15vh 0 0 37vw;
+    color: #002D72;
+}
+@media (min-width: 1024px){
+    .form-input{
+        width: 30vw;
+        margin-left: 75vh;      
+    }
+    .account {
+        margin: 6vh 0 0 46vw;
+    }
+    #btn-pag-login{
+        margin: 20vh 0 0 49vw;
+    }
+}
+@media (min-width: 1440px){
+    .form-input{
+        width: 30vw;
+        margin-left: 67vh;      
+    }
+
+    .account {
+        margin: 1vh 0 0 46vw;
+    }
+    
+    #btn-pag-login{
+        margin: 5vh 0 0 49vw;
+        color: #002D72;
+    }
+}

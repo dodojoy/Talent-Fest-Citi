@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    margin:10vh 35vw 0 35vw;
+    width:30vw;    
+}
+
+.start{
+    margin-top: 3vh;
+    text-align: center;
+    color: #002D72;
+}
+
+.form-input{
+   display: flex;
+   flex-direction: column; 
+   row-gap: 2.5vh;
+   margin: 4vh 0 0 7vw;
+   width: 85vw;
+   padding: 0.3vh;
+}
+
+.input-email, .input-password{
+    height: 6vh;
+    border-radius: 1px;
+    border: 0.10rem solid #002D72;
+    align-items: center;
+}
+
+input::placeholder{
+    color: #002D72;
+    text-align:left;
+}
+
+#btn-login{
+    height: 6vh;
+    padding: 0.3vh 0.3vw;
+    background-color: #002D72;
+    border: none;
+    color: white;
+}
+
+#btn-login:hover{
+    background-color: #00BDF2;
+}
+
+
+
+#btn-google {
+    background-color: white;
+    margin-bottom: 1vh;
+    border: none;
+}
+
+#img-google {
+    width: auto;
+    height: 6vh;
+}
+
+#reset-password {
+    color:#002D72;
+    margin: 1vh 0 0 30vw;
+}
+
+.footer{
+    margin-top: 3vh;
+    flex-wrap: wrap;
+}
+
+.forget {
+    margin: 12vh 0 0 28vw;
+    color: #002D72;
+}
+
+#btn-register {
+    margin: 20vh 0 0 37vw;
+    color: #002D72;
+  }
+
+  @media (min-width: 1024px){
+    .logo{
+        margin: 8vh 30vw 0 42vw;
+        width: 15vw;
+    }
+
+    .start {
+        margin: 3.5vh 30vw 0 31vw;
+    }
+
+    .form-input{
+        width: 30vw;
+        margin-left: 75vh;      
+    }
+
+    #reset-password{
+        margin: 1vh 0 0 46vw;
+    }
+
+    .forget {
+        margin: 8vh 0 0 46vw;
+    }
+
+    #btn-register {
+        margin: 20vh 0 0 49vw;
+    }
+
+    @media (min-width: 1440px){
+        .start{
+            margin: 4vh 25vw 0 30vw;
+        }
+        .start {
+            margin-right: 27vw;
+        }
+        .form-input{
+            margin-left: 67vh;      
+        }
+
+    }
+  }

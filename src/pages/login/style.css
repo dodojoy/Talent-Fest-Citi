@@ -3,7 +3,7 @@
     padding: 0;
 }
 .logo{
-    margin:10vh 20vh 0 20vh;
+    margin:10vh 35vw 0 35vw;
     width:30vw;    
 }
 
@@ -37,10 +37,16 @@ input::placeholder{
 #btn-login{
     height: 6vh;
     padding: 0.3vh 0.3vw;
-    background-color: #00BDF2;
+    background-color: #002D72;
     border: none;
     color: white;
 }
+
+#btn-login:hover{
+    background-color: #00BDF2;
+}
+
+
 
 #btn-google {
     background-color: white;

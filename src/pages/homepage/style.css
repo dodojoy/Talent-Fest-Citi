@@ -17,7 +17,7 @@
 
 .img-logo-nav{
     width: 5rem;
-    margin: 0.2rem; 
+    margin: 0.5rem; 
 }
 
 .btn-login{
@@ -110,6 +110,7 @@
 .footer-homepage p{
     font-size: 1rem;
     color: #FFFFFF;
+    margin: 0.5rem;
 }
 
 .div-menu{
@@ -137,8 +138,13 @@
     cursor: pointer;
 }
 
-.nav-filter-homepage.active{
+.nav-filter-homepage{
     display: none;
+}
+
+.nav-filter-homepage.active{
+    display: flex;
+    width: 100%;
 }
 
 .nav-filter-homepage{

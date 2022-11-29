@@ -69,7 +69,7 @@ export default () => {
 
     const productsTemplate = productsArr.map((product) => `
       <div id="product-card" class="product-card">
-        <img src='${product.img}'></img>
+        <img id="img-card" src='${product.img}'></img>
         <ul>
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>

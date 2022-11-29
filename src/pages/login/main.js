@@ -4,7 +4,6 @@ import {
 } from '../../lib/firebase-auth.js';
 
 import {
-  handleFirebaseErrors,
   validateLoginForm,
 } from '../../lib/validation.js';
 
@@ -37,19 +36,7 @@ export default () => {
   const email = resetContainer.querySelector('#email');
   const password = resetContainer.querySelector('#password');
   const btnLogin = resetContainer.querySelector('#btn-login');
-  const formValidationMessages = resetContainer.querySelector('#form-validation-messages');
-  const firebaseWarningMessages = resetContainer.querySelector('#firebase-warning-messages');
-  // const returnBtn = resetContainer.querySelector('#return-btn');
-
-  // returnBtn.addEventListener('click', () => window.history.back());
-
-  function handleErrors(error) {
-    const userFriendlyMessage = handleFirebaseErrors(error.code);
-    // firebaseWarningMessages.classList.remove('hide');
-    // formValidationMessages.classList.add('hide');
-    firebaseWarningMessages.innerHTML = userFriendlyMessage;
-  }
-
+ 
   btnLogin.addEventListener('click', () => {
     const formValidation = validateLoginForm(email.value, password.value);
     if (formValidation) {
@@ -58,8 +45,11 @@ export default () => {
       formValidationMessages.innerHTML = formValidation;
     } else {
       loginWithEmailAndPassword(email.value, password.value)
-        .catch((error) => {
-          handleErrors(error);
+      .then(() => {
+        window.location.hash = '#homepage';
+      })
+      .catch((error) => {
+       
         });
     }
   });
@@ -68,9 +58,12 @@ export default () => {
 
   googleBtn.addEventListener('click', () => {
     loginWithGoogle()
+    .then(() => {
+      window.location.hash = '#homepage';
+    })
       .catch((error) => {
-        handleErrors(error);
-      });
+
+    });
   });
   return resetContainer;
 };

@@ -7,7 +7,7 @@
     width:30vw;    
 }
 
-.bem-vindo{
+.start{
     margin-top: 3vh;
     text-align: center;
     color: #002D72;
@@ -17,7 +17,7 @@
    display: flex;
    flex-direction: column; 
    row-gap: 2.5vh;
-   margin: 4vh 0 0 4vh;
+   margin: 4vh 0 0 7vw;
    width: 85vw;
    padding: 0.3vh;
 }
@@ -59,9 +59,9 @@ input::placeholder{
     height: 6vh;
 }
 
-#reset-senha{
+#reset-password {
     color:#002D72;
-    margin: 1vh 0 0 17vh;
+    margin: 1vh 0 0 30vw;
 }
 
 .footer{
@@ -69,46 +69,53 @@ input::placeholder{
     flex-wrap: wrap;
 }
 
-.conta {
-    margin: 12vh 0 0 15vh;
+.forget {
+    margin: 12vh 0 0 28vw;
     color: #002D72;
 }
 
 #btn-register {
-    margin: 20vh 0 0 21vh;
+    margin: 20vh 0 0 37vw;
     color: #002D72;
   }
 
   @media (min-width: 1024px){
     .logo{
-        margin: 8vh 50vh 0 77vh;
+        margin: 8vh 30vw 0 42vw;
         width: 15vw;
     }
 
-    .bem-vindo{
-        margin: 4vh 30vh 0 15vh;
+    .start {
+        margin: 3.5vh 30vw 0 31vw;
     }
 
     .form-input{
         width: 30vw;
-        margin-left: 65vh;      
+        margin-left: 75vh;      
     }
 
-    #reset-senha{
-        margin: 1vh 0 0 84vh;
+    #reset-password{
+        margin: 1vh 0 0 46vw;
     }
 
-    .conta {
-        margin: 12vh 0 0 84vh;
+    .forget {
+        margin: 8vh 0 0 46vw;
     }
 
     #btn-register {
-        margin: 20vh 0 0 90vh;
+        margin: 20vh 0 0 49vw;
     }
 
     @media (min-width: 1440px){
-        .bem-vindo{
-            margin: 4vh 30vh 0 30vh;
+        .start{
+            margin: 4vh 25vw 0 30vw;
         }
+        .start {
+            margin-right: 27vw;
+        }
+        .form-input{
+            margin-left: 67vh;      
+        }
+
     }
   }

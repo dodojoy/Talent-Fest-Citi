@@ -49,12 +49,10 @@ export default () => {
 
 
 `;
-
-  const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
-
   container.innerHTML = templateProducts;
 
-  const menu = container.querySelector('#btnMenu')
+  const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
+  const menu = container.querySelector('#btnMenu');
 
   menu.addEventListener('click', () => {
     const navFilter = container.querySelector('#navFilter')
@@ -63,6 +61,7 @@ export default () => {
 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();
+    // console.log(productsArr);
 
     if (category !== 'allProducts') {
       productsArr = productsArr.filter((product) => product.categoria.includes(category));

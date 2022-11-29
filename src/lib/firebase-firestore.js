@@ -16,5 +16,3 @@ export const getAllProducts = async () => {
     return error;
   }
 };
-
-

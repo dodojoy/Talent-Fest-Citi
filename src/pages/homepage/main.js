@@ -7,6 +7,9 @@ export default () => {
       <body>
           <header>
             <nav class='nav-bar-homepage'>
+                <div class="div-menu">
+                    <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
+                </div>
                 <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
                         um arco vermelho em cima da palavra'>
                 <div>
@@ -15,40 +18,53 @@ export default () => {
                 </div>
             </nav>
           </header>
-
+          
           <main>
-              <nav class='nav-filter-homepage'>
-                  <ul>
+            <nav class='nav-filter-homepage' id='navFilter'>
+                <ul id='menu' class='menu'>
+                    <li class='list-allproducts'>Todos os Produtos</li>
+                    <details>
+                        <summary class='categories'>Categorias</summary>
                       <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
                       <li data-product='mouse' class='tag-products'>Mouse</li>
                       <li data-product='keyboard' class='tag-products'>Teclado</li>
                       <li data-product='headset' class='tag-products'>Headset</li>
                       <li data-product='webcam' class='tag-products'>Webcam</li>
                       <li data-product='mousepad' class='tag-products'>Mousepad</li>
-                  </ul>    
-              </nav>
-              
+                    </details>
+                </ul> 
+            </nav>
+       
               <div id='cards-products' class='cards-products'>
               </div>
           </main>
 
           <footer class='footer-homepage'>
-            <div class='footer-logo-copyright'>
-                <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
-                um arco vermelho em cima da palavra'>
-                <p>© 2022 Citigroup Inc. <br> Todos os direitos reservados.</p>
-            </div>
+          <div class='footer-logo-links'>
+            <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
             <a href='#developers'>Desenvolvedoras</a>
             <a href='https://corporateportal.brazil.citibank.com/quem-somos.htm' target='_blank'>Sobre o Cit</a>
+          </div>
+          <div class='footer-copyright'>
+            <p>© 2022 Citigroup Inc. Todos os direitos reservados.</p>
+          </div>
           </footer>
       </body>
 
 
 `;
 
-  const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
+const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
 
-  container.innerHTML = templateProducts;
+container.innerHTML = templateProducts;
+
+const menu = container.querySelector('#btnMenu')
+
+menu.addEventListener('click', () => {
+    const navFilter = container.querySelector('#navFilter')
+    navFilter.classList.toggle('active');
+  });
+
 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();

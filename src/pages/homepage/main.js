@@ -3,18 +3,20 @@ export default () => {
 
   const templateProducts = `
       <header>
-          <nav>
-              <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
+          <nav class='nav-bar-homepage'>
+              <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
                   um arco vermelho em cima da palavra'>
-              <a href='#login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'>Faça login ou cadastre-se</a>
-              <a href='#cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
-          </nav>
+            <div>
+              <a href='#login'><img class='btn-login' src='assets/login.png' alt='Botão branco de redirecionamento à página de login'>Faça login ou cadastre-se</a>
+              <a href='#cart'><img class='btn-cart' src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
+            </div>
+            </nav>
       </header>
       <body>
           <main>
               <nav>
                   <ul>
-                      <li>Todos os Produtos</li>
+                      <li class='list-allproducts'>Todos os Produtos</li>
                       <li>Mouse</li>
                       <li>Teclado</li>
                       <li>Headset</li>
@@ -32,6 +34,8 @@ export default () => {
           <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
           um arco vermelho em cima da palavra'>
           <p>© 20xx Citigroup Inc. Todos os direitos reservados.</p>
+          <a href='#developers'>Desenvolvedoras</a>
+          <a href='https://corporateportal.brazil.citibank.com/quem-somos.htm' target='_blank'>Sobre o Cit</a>
           
       </footer>
 

@@ -1,6 +1,6 @@
-import { getFirestore, getDocs, collection } from './export';
+import { getFirestore, getDocs, collection } from './export.js';
 
-import { app } from './firebase-config';
+import { app } from './firebase-config.js';
 
 const db = getFirestore(app);
 

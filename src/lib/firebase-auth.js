@@ -10,7 +10,7 @@ import {
     signOut,
   } from './exports.js';
   
-  import { app } from './configuration.js';
+  import { app } from './firebase.config';
   
   const provider = new GoogleAuthProvider(app);
   

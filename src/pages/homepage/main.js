@@ -1,3 +1,5 @@
+import { getAllProducts } from '../../lib/firebase-firestore.js';
+
 export default () => {
   const container = document.createElement('div');
 
@@ -16,7 +18,7 @@ export default () => {
                 </div>
             </nav>
           </header>
-
+          
           <main>
             <nav class='nav-filter-homepage' id='navFilter'>
                 <ul id='menu' class='menu'>
@@ -31,9 +33,9 @@ export default () => {
                     </details>
                 </ul> 
             </nav>
-              
-            <div class=cards-products>
-            </div>
+       
+              <div id='cards-products' class='cards-products'>
+              </div>
           </main>
 
           <footer class='footer-homepage'>
@@ -50,6 +52,9 @@ export default () => {
 
 
 `;
+
+const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
+
 container.innerHTML = templateProducts;
 
 const menu = container.querySelector('#btnMenu')
@@ -59,6 +64,34 @@ menu.addEventListener('click', () => {
     navFilter.classList.toggle('active');
   });
 
-return container;
 
-}
+  const printProducts = async (category) => {
+    let productsArr = await getAllProducts();
+
+    if (category !== 'allProducts') {
+      productsArr = productsArr.filter((product) => product.categoria.includes(category));
+    }
+
+    const productsTemplate = productsArr.map((product) => `
+      <div id="product-card" class="product-card">
+        <img src='${product.img}'></img>
+        <ul>
+          <li>${product.nome}</li>
+          <li>R$ ${product.preco}</li>
+        </ul>
+      </div>
+    `).join('');
+
+    container.querySelector('#cards-products').innerHTML = productsTemplate;
+
+    menuProducts.forEach((prod) => {
+      prod.addEventListener('click', () => {
+        printProducts(prod.dataset.product);
+      });
+    });
+  };
+
+  printProducts('allProducts');
+
+  return container;
+};

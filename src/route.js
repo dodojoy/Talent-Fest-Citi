@@ -3,7 +3,7 @@ import homepage from './pages/homepage/main.js';
 import login from './pages/login/main.js';
 import register from './pages/register/main.js';
 // import qrcode from './pages/qrcode/main.js';
-// import products from './pages/products/main.js';
+import products from './pages/products/main.js';
 
 const main = document.querySelector('#root');
 
@@ -19,9 +19,9 @@ function loadRoots() {
     case '#register':
       main.appendChild(register());
       break;
-  //   case '#products':
-  //     main.appendChild(products());
-  //     break;
+    case '#products':
+      main.appendChild(products());
+      break;
   //   case '#cart':
   //     main.appendChild(cart());
   //     break;

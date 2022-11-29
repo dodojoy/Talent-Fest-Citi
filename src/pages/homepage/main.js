@@ -1,5 +1,7 @@
 import { getAllProducts } from '../../lib/firebase-firestore.js';
 
+import products from '../products/main.js'
+
 export default () => {
   const container = document.createElement('div');
 
@@ -32,6 +34,7 @@ export default () => {
             </nav>
        
               <div id='cards-products' class='cards-products'>
+              
               </div>
           </main>
 
@@ -68,16 +71,25 @@ export default () => {
     }
 
     const productsTemplate = productsArr.map((product) => `
-      <div id="product-card" class="product-card">
+      <div id="product-card" class="product-card" data-product-id=${product.id}>
         <img id="img-card" src='${product.img}'></img>
         <ul>
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
+          <button id='btn-modal' class="btn-modal">Ver mais</button>
+          <section id="div-modal"></section>
         </ul>
       </div>
     `).join('');
 
     container.querySelector('#cards-products').innerHTML = productsTemplate;
+
+    const btnModal = container.querySelector('#btn-modal')
+    console.log(btnModal)
+    btnModal.addEventListener('click', () => {
+      const divModal = container.querySelector('#div-modal');
+      divModal.appendChild(products());
+    });
 
     menuProducts.forEach((prod) => {
       prod.addEventListener('click', () => {
@@ -88,5 +100,6 @@ export default () => {
 
   printProducts('allProducts');
 
+ 
   return container;
 };

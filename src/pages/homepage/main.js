@@ -13,7 +13,7 @@ export default () => {
                 <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
                         um arco vermelho em cima da palavra'>
                 <div>
-                    <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'>Faça login ou cadastre-se</a>
+                    <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
                     <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
                 </div>
             </nav>
@@ -22,16 +22,12 @@ export default () => {
           <main>
             <nav class='nav-filter-homepage' id='navFilter'>
                 <ul id='menu' class='menu'>
-                    <li class='list-allproducts'>Todos os Produtos</li>
-                    <details>
-                        <summary class='categories'>Categorias</summary>
-                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
-                      <li data-product='mouse' class='tag-products'>Mouse</li>
-                      <li data-product='keyboard' class='tag-products'>Teclado</li>
-                      <li data-product='headset' class='tag-products'>Headset</li>
-                      <li data-product='webcam' class='tag-products'>Webcam</li>
-                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
-                    </details>
+                    <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                    <li data-product='mouse' class='tag-products'>Mouse</li>
+                    <li data-product='keyboard' class='tag-products'>Teclado</li>
+                    <li data-product='headset' class='tag-products'>Headset</li>
+                    <li data-product='webcam' class='tag-products'>Webcam</li>
+                    <li data-product='mousepad' class='tag-products'>Mousepad</li>
                 </ul> 
             </nav>
        
@@ -54,17 +50,16 @@ export default () => {
 
 `;
 
-const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
+  const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
 
-container.innerHTML = templateProducts;
+  container.innerHTML = templateProducts;
 
-const menu = container.querySelector('#btnMenu')
+  const menu = container.querySelector('#btnMenu')
 
-menu.addEventListener('click', () => {
+  menu.addEventListener('click', () => {
     const navFilter = container.querySelector('#navFilter')
     navFilter.classList.toggle('active');
   });
-
 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();

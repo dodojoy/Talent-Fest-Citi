@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    margin:10vh 20vh 0 20vh;
+    width:30vw;    
+}
+
+.bem-vindo{
+    margin-top: 3vh;
+    text-align: center;
+    color: #002D72;
+}
+
+.form-input{
+   display: flex;
+   flex-direction: column; 
+   row-gap: 2.5vh;
+   margin: 4vh 0 0 4vh;
+   width: 85vw;
+   padding: 0.3vh;
+}
+
+.input-email, .input-password{
+    height: 6vh;
+    border-radius: 1px;
+    border: 0.10rem solid #002D72;
+    align-items: center;
+}
+
+input::placeholder{
+    color: #002D72;
+    text-align:left;
+}
+
+#btn-login{
+    height: 6vh;
+    padding: 0.3vh 0.3vw;
+    background-color: #00BDF2;
+    border: none;
+    color: white;
+}
+
+#btn-google {
+    background-color: white;
+    margin-bottom: 1vh;
+    border: none;
+}
+
+#img-google {
+    width: auto;
+    height: 6vh;
+}
+
+#reset-senha{
+    color:#002D72;
+    margin: 1vh 0 0 17vh;
+}
+
+.footer{
+    margin-top: 3vh;
+    flex-wrap: wrap;
+}
+
+.conta {
+    margin: 12vh 0 0 15vh;
+    color: #002D72;
+}
+
+#btn-register {
+    margin: 20vh 0 0 21vh;
+    color: #002D72;
+  }
+
+  @media (min-width: 1024px){
+    .logo{
+        margin: 8vh 50vh 0 77vh;
+        width: 15vw;
+    }
+
+    .bem-vindo{
+        margin: 4vh 30vh 0 15vh;
+    }
+
+    .form-input{
+        width: 30vw;
+        margin-left: 65vh;      
+    }
+
+    #reset-senha{
+        margin: 1vh 0 0 84vh;
+    }
+
+    .conta {
+        margin: 12vh 0 0 84vh;
+    }
+
+    #btn-register {
+        margin: 20vh 0 0 90vh;
+    }
+
+    @media (min-width: 1440px){
+        .bem-vindo{
+            margin: 4vh 30vh 0 30vh;
+        }
+    }
+  }

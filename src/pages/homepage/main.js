@@ -1,4 +1,4 @@
-import { getAllProducts } from '../../lib/firebase-firestore';
+import { getAllProducts } from '../../lib/firebase-firestore.js';
 
 export default () => {
   const container = document.createElement('div');

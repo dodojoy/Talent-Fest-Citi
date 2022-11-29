@@ -37,6 +37,7 @@ input::placeholder{
 #btn-login{
     height: 6vh;
     padding: 0.3vh 0.3vw;
+    margin: 0 0 1vh 0;
     background-color: #002D72;
     border: none;
     color: white;
@@ -45,8 +46,6 @@ input::placeholder{
 #btn-login:hover{
     background-color: #00BDF2;
 }
-
-
 
 #btn-google {
     background-color: white;
@@ -69,17 +68,17 @@ input::placeholder{
     flex-wrap: wrap;
 }
 
-.forget {
+.account {
     margin: 12vh 0 0 28vw;
     color: #002D72;
 }
 
-#btn-register {
+#btn-pag-register {
     margin: 20vh 0 0 37vw;
     color: #002D72;
-  }
+}
 
-  @media (min-width: 1024px){
+@media (min-width: 1024px ){
     .logo{
         margin: 8vh 30vw 0 42vw;
         width: 15vw;
@@ -94,28 +93,44 @@ input::placeholder{
         margin-left: 75vh;      
     }
 
+    #btn-login{
+        width: 90vw;
+    }
+
     #reset-password{
         margin: 1vh 0 0 46vw;
     }
 
-    .forget {
+    .account {
         margin: 8vh 0 0 46vw;
     }
 
-    #btn-register {
+    #btn-pag-register {
         margin: 20vh 0 0 49vw;
+        color: #002D72;
+    }
+}
+
+@media (min-width: 1100px){
+    .start{
+       margin: 4vh 25vw 0 30vw;
     }
 
-    @media (min-width: 1440px){
-        .start{
-            margin: 4vh 25vw 0 30vw;
-        }
-        .start {
-            margin-right: 27vw;
-        }
-        .form-input{
-            margin-left: 67vh;      
-        }
-
+    #btn-login {
+        width: 63vh;
+        margin: 0 0 1vh 0;
     }
-  }
+
+    #btn-register {
+      margin: 5vh 0 0 49vw;
+    }
+        
+    .account {
+       margin: 10vh 0 0 46vw;
+    }
+
+    #btn-pag-register {
+      margin: 5vh 0 0 49vw;
+      color: #002D72;
+    }
+}

@@ -16,8 +16,8 @@ export default () => {
     <p id="reset-password">Esqueceu sua senha?</p>
     <p class="msg-error"></p>
     <footer class="footer">
-      <h4 class="forget">Não possui uma conta?</h4>
-      <a id="btn-register" href="#register">Cadastre-se!</a>
+      <h4 class="account">Não possui uma conta?</h4>
+      <a id="btn-pag-register" href="#register">Cadastre-se!</a>
     </footer>
             `;
     resetContainer.innerHTML = template;

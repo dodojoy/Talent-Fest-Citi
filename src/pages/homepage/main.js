@@ -25,11 +25,12 @@ export default () => {
                     <li class='list-allproducts'>Todos os Produtos</li>
                     <details>
                         <summary class='categories'>Categorias</summary>
-                        <li>Mouse</li>
-                        <li>Teclado</li>
-                        <li>Headset</li>
-                        <li>Webcam</li>
-                        <li>Mousepad</li>
+                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                      <li data-product='mouse' class='tag-products'>Mouse</li>
+                      <li data-product='keyboard' class='tag-products'>Teclado</li>
+                      <li data-product='headset' class='tag-products'>Headset</li>
+                      <li data-product='webcam' class='tag-products'>Webcam</li>
+                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
                     </details>
                 </ul> 
             </nav>

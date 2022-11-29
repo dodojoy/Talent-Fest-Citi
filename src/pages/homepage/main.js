@@ -15,14 +15,18 @@ export default () => {
       <body>
           <main>
               <nav class='nav-filter-homepage'>
-                  <ul>
-                      <li class='list-allproducts'>Todos os Produtos</li>
-                      <li>Mouse</li>
-                      <li>Teclado</li>
-                      <li>Headset</li>
-                      <li>Webcam</li>
-                      <li>Mousepad</li>
-                  </ul>    
+                    <ul>
+                        <li class='list-allproducts'>Todos os Produtos</li>
+                        <details>
+                         <summary class='categories'>Categorias</summary>
+                         <li>Mouse</li>
+                         <li>Teclado</li>
+                         <li>Headset</li>
+                         <li>Webcam</li>
+                         <li>Mousepad</li>
+                        </details>
+                  </ul> 
+                 
               </nav>
               
               <div class=cards-products>
@@ -31,12 +35,13 @@ export default () => {
           </main>
       </body>
       <footer class='footer-homepage'>
-          <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
-          um arco vermelho em cima da palavra'>
-          <p>© 20xx Citigroup Inc. Todos os direitos reservados.</p>
-          <a href='#developers'>Desenvolvedoras</a>
-          <a href='https://corporateportal.brazil.citibank.com/quem-somos.htm' target='_blank'>Sobre o Cit</a>
-          
+        <div class='footer-logo-copyright'>
+            <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
+            um arco vermelho em cima da palavra'>
+            <p>© 2022 Citigroup Inc. Todos os direitos reservados.</p>
+        </div>
+        <a href='#developers'>Desenvolvedoras</a>
+        <a href='https://corporateportal.brazil.citibank.com/quem-somos.htm' target='_blank'>Sobre o Cit</a>
       </footer>
 
 `;

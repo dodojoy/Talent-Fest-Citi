@@ -19,27 +19,28 @@ body{
     margin: 2rem; 
 }
 
-nav a {
+.nav-filter-homepage a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
+.nav-filter-homepage a:hover{
+    color: #00BDF2;
+}
 
-
-ul{
+.nav-filter-homepage ul{
     text-transform: uppercase;
     list-style: none;
 }
 
-li{
+.nav-filter-homepage li{
     margin: 1rem;
     color: #002D72;
 }
 
-li:hover{
+.nav-filter-homepage li:hover{
     color: #00BDF2;
 }
-
 
 .list-allproducts{
     margin-bottom: 3rem;
@@ -50,7 +51,7 @@ height: 200px;
 width: 100%;
 }
 
-footer {
+.footer-homepage{
     margin: 2rem 0 0rem;
     height: 60px;
     width: 100%;
@@ -61,13 +62,17 @@ footer {
     justify-content: space-between;
 }
 
-footer img{
+.footer-homepage img{
     width: 10rem;
     margin: 1rem;
 }
 
-footer a{
+.footer-homepage a{
     text-decoration: none;
     color: #FFFFFF;
     margin: 2rem;
+}
+
+footer a:hover{
+    color: #00BDF2;
 }

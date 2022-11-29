@@ -14,7 +14,7 @@ export default () => {
       </header>
       <body>
           <main>
-              <nav>
+              <nav class='nav-filter-homepage'>
                   <ul>
                       <li class='list-allproducts'>Todos os Produtos</li>
                       <li>Mouse</li>
@@ -30,7 +30,7 @@ export default () => {
 
           </main>
       </body>
-      <footer>
+      <footer class='footer-homepage'>
           <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
           um arco vermelho em cima da palavra'>
           <p>© 20xx Citigroup Inc. Todos os direitos reservados.</p>

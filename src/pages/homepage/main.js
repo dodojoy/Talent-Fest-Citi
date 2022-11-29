@@ -1,3 +1,5 @@
+import { getAllProducts } from '../../lib/firebase-firestore';
+
 export default () => {
   const container = document.createElement('div');
 
@@ -16,16 +18,16 @@ export default () => {
           <main>
               <nav class='nav-filter-homepage'>
                   <ul>
-                      <li class='list-allproducts'>Todos os Produtos</li>
-                      <li>Mouse</li>
-                      <li>Teclado</li>
-                      <li>Headset</li>
-                      <li>Webcam</li>
-                      <li>Mousepad</li>
+                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                      <li data-product='mouse' class='tag-products'>Mouse</li>
+                      <li data-product='keyboard' class='tag-products'>Teclado</li>
+                      <li data-product='headset' class='tag-products'>Headset</li>
+                      <li data-product='webcam' class='tag-products'>Webcam</li>
+                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
                   </ul>    
               </nav>
               
-              <div class=cards-products>
+              <div id='cards-products' class='cards-products'>
               </div>
 
           </main>
@@ -41,7 +43,37 @@ export default () => {
 
 `;
 
-container.innerHTML = templateProducts;
-return container;
+  const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
 
-}
+  container.innerHTML = templateProducts;
+
+  const printProducts = async (category) => {
+    let productsArr = await getAllProducts();
+
+    if (category !== 'allProducts') {
+      productsArr = productsArr.filter((product) => product.categoria.includes(category));
+    }
+
+    const productsTemplate = productsArr.map((product) => `
+      <div id="product-card" class="product-card">
+        <img src='${product.img}'></img>
+        <ul>
+          <li>${product.nome}</li>
+          <li>R$ ${product.preco}</li>
+        </ul>
+      </div>
+    `).join('');
+
+    container.querySelector('#cards-products').innerHTML = productsTemplate;
+
+    menuProducts.forEach((prod) => {
+      prod.addEventListener('click', () => {
+        printProducts(prod.dataset.product);
+      });
+    });
+  };
+
+  printProducts('allProducts');
+
+  return container;
+};

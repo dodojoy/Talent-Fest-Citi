@@ -8,9 +8,9 @@ import {
   sendPasswordResetEmail,
   updateProfile,
   signOut,
-} from './export';
+} from './export.js';
 
-import { app } from './firebase.config';
+import { app } from './firebase-config.js';
 
 const provider = new GoogleAuthProvider(app);
 

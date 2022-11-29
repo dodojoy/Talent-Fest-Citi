@@ -28,8 +28,8 @@ function loadRoots() {
   //   case '#qrcode':
   //     main.appendChild(qrcode());
   //     break;
-  //   default:
-  //     main.appendChild(homepage());
+    default:
+      main.appendChild(homepage());
   }
 }
 

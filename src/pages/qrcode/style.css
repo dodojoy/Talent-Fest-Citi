@@ -8,6 +8,13 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .btn-homepage{
     text-decoration: none;
     color: #FFFFFF;

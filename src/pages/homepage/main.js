@@ -1,4 +1,4 @@
-import { userStateChanged } from '../../lib/firebase-auth.js';
+import { statusUser} from '../../lib/firebase-auth.js';
 import { getAllProducts } from '../../lib/firebase-firestore.js';
 
 export default () => {
@@ -74,6 +74,7 @@ export default () => {
     navFilter.classList.toggle('active');
   });
 
+ 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();
 
@@ -113,11 +114,14 @@ export default () => {
     const fade = container.querySelector('#fade');
 
     buyBtn.addEventListener('click', () => {
-      if (userStateChanged !== null)
-      window.location.hash = '#login';
-      else 
-      window.location.hash = '#qrcode';
-    })
+      statusUser(async (logged) => {
+        if (logged) {
+          window.location.hash = '#qrcode';
+        } else {
+          window.location.hash = '#login';
+        }
+      });
+    });
 
     function toggle(id) {
       const modal = container.querySelector(`#modal-product-${id}`);
@@ -129,15 +133,20 @@ export default () => {
     openModal.forEach((btn) => {
       btn.addEventListener('click', (el) => {
         toggle(el.currentTarget.dataset.productId);
-        console.log(el.currentTarget.dataset.productId);
       });
+    });
+    
+    closeModal.addEventListener('click', () => {
+      const closemodal = container.querySelector('.modal-product');
+      closemodal.classList.toggle('none');
+      fade.classList.toggle('none');
     });
 
-    [fade, closeModal].forEach((el) => {
-      el.addEventListener('click', () => {
-        toggle();
-      });
-    });
+    // [fade, closeModal].forEach((el) => {
+    //   el.addEventListener('click', () => {
+    //     toggle();
+    //   });
+    // });
 
     menuProducts.forEach((prod) => {
       prod.addEventListener('click', () => {

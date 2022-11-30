@@ -14,17 +14,22 @@ import { app } from './firebase-config.js';
 
 const provider = new GoogleAuthProvider(app);
 
-export function userStateChanged(callback) {
-  const auth = getAuth(app);
-  onAuthStateChanged(auth, callback);
-}
 
 export function registerWithEmailAndPassword(name, email, password) {
   const auth = getAuth(app);
   return createUserWithEmailAndPassword(auth, email, password)
     .then(() => updateProfile(auth.currentUser, {
       displayName: name,
-    }));
+  }));
+}
+
+export function statusUser(status) {
+  const auth = getAuth(app);
+  return onAuthStateChanged(auth, (user) => {
+    status(user);
+  
+});
+
 }
 
 export function loginWithEmailAndPassword(email, password) {

@@ -14,7 +14,7 @@ export default () => {
     <img class='logo' src='assets/logoazul.png'>
     <h1 class='start'>Bem vindo ao Citi Shop</h1>
     <form class='form-input'>
-      <input class='input-name' type='password' id='input-name' placeholder='NOME'>
+      <input class='input-name' type='text' id='input-name' placeholder='NOME'>
       <input class='input-email' type='email' id='input-email' placeholder='E-MAIL'>
       <input class='input-password' type='password' id='input-password' placeholder='SENHA'>
       <input class='input-password-confirm' type='password' id='input-password-confirm' placeholder='CONFIRME SUA SENHA'>
@@ -23,9 +23,9 @@ export default () => {
     <p class='msg-error'></p>
     <footer class='footer'>
       <h4 class='account'>Já possui uma conta?</h4>
-      <a id='btn-pag-login' href="#register">Faça login!</a>
+      <a id='btn-pag-login' href='#login'>Faça login!</a>
     </footer>
-            `;
+     `;
     resetContainer.innerHTML = template;
 
     const name = resetContainer.querySelector('#input-name');

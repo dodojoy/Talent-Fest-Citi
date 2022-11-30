@@ -6,52 +6,41 @@ export default () => {
 
   const templateProducts = `
       <body>
-          <header>
-            <nav class='nav-bar-homepage'>
-                <div class="div-menu">
-                    <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
-                </div>
-                <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
-                        um arco vermelho em cima da palavra'>
-                <div>
-                    <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
-                    <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
-                </div>
+        <div class="wrapper">
+        <header>
+          <nav class='nav-bar-homepage'>
+              <div class="div-menu">
+                  <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
+              </div>
+              <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
+                      um arco vermelho em cima da palavra'>
+              <div>
+                  <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
+                  <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
+              </div>
+          </nav>
+        </header>
+      
+        <main class='homepage-main'>
+          <section class='nav-filter-side'>
+            <nav class='nav-filter-homepage' id='navFilter'>
+                <ul id='menu' class='menu'>
+                    <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                    <li data-product='mouse' class='tag-products'>Mouse</li>
+                    <li data-product='keyboard' class='tag-products'>Teclado</li>
+                    <li data-product='headset' class='tag-products'>Headset</li>
+                    <li data-product='webcam' class='tag-products'>Webcam</li>
+                    <li data-product='mousepad' class='tag-products'>Mousepad</li>
+                </ul> 
             </nav>
-          </header>
-          
-          <main class='homepage-main'>
-            <section class='nav-filter-side'>
-              <nav class='nav-filter-homepage' id='navFilter'>
-                  <ul id='menu' class='menu'>
-                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
-                      <li data-product='mouse' class='tag-products'>Mouse</li>
-                      <li data-product='keyboard' class='tag-products'>Teclado</li>
-                      <li data-product='headset' class='tag-products'>Headset</li>
-                      <li data-product='webcam' class='tag-products'>Webcam</li>
-                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
-                  </ul> 
-              </nav>
-            </section>
-       
-            <section id='cards-products' class='cards-products'>
-              
-            </section>
-          </main>
+          </section>
+    
+          <section id='cards-products' class='cards-products'>
+            
+          </section>
+        </main>
 
-          <div id="fade" class="none"></div>
-
-          <div id='modal-product' class='none'>
-            <button id='close-modal'>X</button>
-            <ul>
-              <li>nome</li>
-              <li>descrição</li>
-              <li>preço</li>
-            </ul>
-            <button id='buy-product'>Comprar</button>
-          </div>
-
-          <footer class='footer-homepage'>
+        <footer class='footer-homepage'>
           <div class='footer-logo-links'>
             <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
             <a href='#developers'>Desenvolvedoras</a>
@@ -60,7 +49,7 @@ export default () => {
           <div class='footer-copyright'>
             <p>© 2022 Citigroup Inc. Todos os direitos reservados.</p>
           </div>
-          </footer>
+        </footer>
       </body>
 
 
@@ -69,15 +58,6 @@ export default () => {
 
   const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
   const menu = container.querySelector('#btnMenu');
-  const modal = container.querySelector('#modal-product');
-  const buyBtn = container.querySelector('#buy-product');
-  const fade = container.querySelector('#fade');
-
-  function toggle(id) {
-    modal.classList.toggle('none');
-    buyBtn.setAttribute('data-productId', id);
-    fade.classList.toggle('none');
-  }
 
   buyBtn.addEventListener('click', () => {
     if (userStateChanged !== null)
@@ -114,17 +94,41 @@ export default () => {
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
         </ul>
-        <button data-product-id=${product.id} id='open-modal' class="btn-modal">Ver mais</button>
+        <button data-product-id=${product.SKU} id='open-modal' class="btn-modal">Ver mais</button>
+        <div id="fade" class="none"></div>
+  
+        <div id='modal-product' class='none'>
+          <button id='close-modal'>X</button>
+          <img class='img-modal-product' src='${product.img}'></img>
+          <ul>
+            <li class='modal-name-product'>${product.nome}</li>
+            <li class='modal-description-product'>${product.descricao}</li>
+            <li class='modal-price-product'>R$ ${product.preco}</li>
+          </ul>
+          <button id='buy-product'>Comprar</button>
+        </div>
       </div>
     `).join('');
 
     container.querySelector('#cards-products').innerHTML = productsTemplate;
 
-    const openModal = container.querySelector('#open-modal');
+    const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
+    const modal = container.querySelector('#modal-product');
+    // const buyBtn = container.querySelector('#buy-product');
+    const fade = container.querySelector('#fade');
 
-    openModal.addEventListener('click', () => {
-      toggle();
+    function toggle(id) {
+      modal.classList.toggle('none');
+      modal.setAttribute('data-idPost', id);
+      fade.classList.toggle('none');
+    }
+
+    openModal.forEach((btn) => {
+      btn.addEventListener('click', (el) => {
+        toggle(el.currentTarget.dataset.productId);
+        console.log(el.currentTarget.dataset.productId);
+      });
     });
 
     [fade, closeModal].forEach((el) => {

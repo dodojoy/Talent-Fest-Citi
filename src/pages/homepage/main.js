@@ -1,5 +1,7 @@
 import { getAllProducts } from '../../lib/firebase-firestore.js';
 
+import products from '../products/main.js'
+
 export default () => {
   const container = document.createElement('div');
 
@@ -32,6 +34,7 @@ export default () => {
             </nav>
        
               <div id='cards-products' class='cards-products'>
+              
               </div>
           </main>
 
@@ -61,9 +64,6 @@ export default () => {
 
 
 `;
-
-  const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
-
   container.innerHTML = templateProducts;
 
   const menu = container.querySelector('#btnMenu');
@@ -79,13 +79,14 @@ export default () => {
 
   // const productCard = Array.from(container.querySelectorAll('#product-card'));
 
-
   // productCard.forEach((card) => {
   //   card.addEventListener('click', (el) => {
   //     toggle(el.currentTarget.dataset.productId);
   //     console.log(el.currentTarget.dataset.productId);
   //   });
   // });
+
+  const menu = container.querySelector('#btnMenu');
 
   menu.addEventListener('click', () => {
     const navFilter = container.querySelector('#navFilter');
@@ -94,17 +95,20 @@ export default () => {
 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();
+    // console.log(productsArr);
 
     if (category !== 'allProducts') {
       productsArr = productsArr.filter((product) => product.categoria.includes(category));
     }
 
     const productsTemplate = productsArr.map((product) => `
-      <div id="product-card" class="product-card">
-        <img src='${product.img}'></img>
+      <div id="product-card" class="product-card" data-product-id=${product.id}>
+        <img id="img-card" src='${product.img}'></img>
         <ul>
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
+          <button id='btn-modal' class="btn-modal">Ver mais</button>
+          <section id="div-modal"></section>
         </ul>
         <button data-product-id=${product.id} id='open-modal'>Ver mais</button>
       </div>
@@ -122,11 +126,13 @@ export default () => {
     [fade, closeModal].forEach((el) => {
       el.addEventListener('click', () => {
         toggle();
+
       });
     });
   };
 
   printProducts('allProducts');
 
+ 
   return container;
 };

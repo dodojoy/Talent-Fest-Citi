@@ -74,6 +74,11 @@
     width: 100%;
 }
 
+#img-card{
+    width: 30%;
+    height: auto;
+}
+
 .footer-homepage{
     margin: 2rem 0rem 0rem;
     height: 12vh;

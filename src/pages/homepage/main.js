@@ -19,21 +19,23 @@ export default () => {
             </nav>
           </header>
           
-          <main>
-            <nav class='nav-filter-homepage' id='navFilter'>
-                <ul id='menu' class='menu'>
-                    <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
-                    <li data-product='mouse' class='tag-products'>Mouse</li>
-                    <li data-product='keyboard' class='tag-products'>Teclado</li>
-                    <li data-product='headset' class='tag-products'>Headset</li>
-                    <li data-product='webcam' class='tag-products'>Webcam</li>
-                    <li data-product='mousepad' class='tag-products'>Mousepad</li>
-                </ul> 
-            </nav>
+          <main class='homepage-main'>
+            <section class='nav-filter-side'>
+              <nav class='nav-filter-homepage' id='navFilter'>
+                  <ul id='menu' class='menu'>
+                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                      <li data-product='mouse' class='tag-products'>Mouse</li>
+                      <li data-product='keyboard' class='tag-products'>Teclado</li>
+                      <li data-product='headset' class='tag-products'>Headset</li>
+                      <li data-product='webcam' class='tag-products'>Webcam</li>
+                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
+                  </ul> 
+              </nav>
+            </section>
        
-              <div id='cards-products' class='cards-products'>
+            <section id='cards-products' class='cards-products'>
               
-              </div>
+            </section>
           </main>
 
           <div id="fade" class="none"></div>
@@ -103,8 +105,8 @@ export default () => {
         <ul>
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
-          </ul>
-          <button data-product-id=${product.id} id='open-modal'>Ver mais</button>
+        </ul>
+        <button data-product-id=${product.id} id='open-modal' class="btn-modal">Ver mais</button>
       </div>
     `).join('');
 

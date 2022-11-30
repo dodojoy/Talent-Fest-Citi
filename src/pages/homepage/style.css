@@ -114,6 +114,7 @@
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .btn-modal:hover{

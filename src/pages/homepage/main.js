@@ -1,5 +1,6 @@
 import { statusUser} from '../../lib/firebase-auth.js';
 import { getAllProducts } from '../../lib/firebase-firestore.js';
+import { logoff } from '../../lib/firebase-auth.js';
 
 export default () => {
   const container = document.createElement('div');
@@ -10,13 +11,13 @@ export default () => {
         <header>
           <nav class='nav-bar-homepage'>
               <div class="div-menu">
-                  <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
+                <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
               </div>
-              <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
-                      um arco vermelho em cima da palavra'>
+              <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
               <div>
-                  <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
-                  <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
+                <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
+                <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
+                <a href='#login' class='logout-icon' src='' alt='signout icon'>
               </div>
           </nav>
         </header>
@@ -25,12 +26,12 @@ export default () => {
           <section class='nav-filter-side'>
             <nav class='nav-filter-homepage' id='navFilter'>
                 <ul id='menu' class='menu'>
-                    <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
-                    <li data-product='mouse' class='tag-products'>Mouse</li>
-                    <li data-product='keyboard' class='tag-products'>Teclado</li>
-                    <li data-product='headset' class='tag-products'>Headset</li>
-                    <li data-product='webcam' class='tag-products'>Webcam</li>
-                    <li data-product='mousepad' class='tag-products'>Mousepad</li>
+                  <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                  <li data-product='mouse' class='tag-products'>Mouse</li>
+                  <li data-product='keyboard' class='tag-products'>Teclado</li>
+                  <li data-product='headset' class='tag-products'>Headset</li>
+                  <li data-product='webcam' class='tag-products'>Webcam</li>
+                  <li data-product='mousepad' class='tag-products'>Mousepad</li>
                 </ul> 
             </nav>
           </section>
@@ -99,7 +100,7 @@ export default () => {
     const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
     const buyBtn = container.querySelector('#buy-product');
-
+    const logoutBtn = feedContainer.querySelector('#logout-btn');
     const fade = container.querySelector('#fade');
 
     buyBtn.addEventListener('click', (product) => {
@@ -141,6 +142,10 @@ export default () => {
       });
     });
   };
+
+  logoutBtn.addEventListener('click', () => {
+    logoff();
+  });
 
   printProducts('allProducts');
 

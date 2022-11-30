@@ -59,13 +59,7 @@ export default () => {
   const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
   const menu = container.querySelector('#btnMenu');
 
-  buyBtn.addEventListener('click', () => {
-    if (userStateChanged !== null)
-    window.location.hash = '#login';
-    else 
-    window.location.hash = '#qrcode';
-  })
-
+  
   // const productCard = Array.from(container.querySelectorAll('#product-card'));
 
   // productCard.forEach((card) => {
@@ -115,8 +109,15 @@ export default () => {
     const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
     const modal = container.querySelector('#modal-product');
-    // const buyBtn = container.querySelector('#buy-product');
+    const buyBtn = container.querySelector('#buy-product');
     const fade = container.querySelector('#fade');
+
+    buyBtn.addEventListener('click', () => {
+      if (userStateChanged !== null)
+      window.location.hash = '#login';
+      else 
+      window.location.hash = '#qrcode';
+    })
 
     function toggle(id) {
       modal.classList.toggle('none');

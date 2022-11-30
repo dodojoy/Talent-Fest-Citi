@@ -1,13 +1,14 @@
 # Talent Fest: Desafio Citi
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
-Projeto desenvolvido pelo squad: @dodojoy @asmih @andradeannac @polyanagm @Canzua.
+Projeto desenvolvido pelo squad: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), Andrea Santos [@Canzua](https://github.com/Canzua), Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
+Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e Michelle Santana [@asmih](https://github.com/asmih).
 
 
 ## Índice
 
 * [1. Introdução](#1-introducao)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
+* [2. Resumo do projeto](#2-resumo-do-projeto) 
 * [3. Planejamento](#3-planejamento)
 * [4. Protótipo](#4-prototipo)
 * [5. Resultado](#5-resultado)

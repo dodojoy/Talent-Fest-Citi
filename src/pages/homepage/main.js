@@ -80,7 +80,7 @@ export default () => {
     }
 
     const productsTemplate = productsArr.map((product) => `
-      <div id="product-card" class="product-card" data-product-id=${product.id}>
+      <div id="product-card" class="product-card" data-product-id=${product.SKU}>
         <img id="img-card" src='${product.img}'></img>
         <ul>
           <li>${product.nome}</li>
@@ -89,7 +89,7 @@ export default () => {
         <button data-product-id=${product.SKU} id='open-modal' class="btn-modal">Ver mais</button>
         <div id="fade" class="none"></div>
   
-        <div id='modal-product' class='none'>
+        <div id='modal-product-${product.SKU}' class='none modal-product' >
           <button id='close-modal'>X</button>
           <img class='img-modal-product' src='${product.img}'></img>
           <ul>
@@ -106,13 +106,13 @@ export default () => {
 
     const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
-    const modal = container.querySelector('#modal-product');
     // const buyBtn = container.querySelector('#buy-product');
     const fade = container.querySelector('#fade');
 
     function toggle(id) {
+      const modal = container.querySelector(`#modal-product-${id}`);
       modal.classList.toggle('none');
-      modal.setAttribute('data-idPost', id);
+      modal.setAttribute('data-idProduct', id);
       fade.classList.toggle('none');
     }
 

@@ -21,21 +21,23 @@ export default () => {
             </nav>
           </header>
           
-          <main>
-            <nav class='nav-filter-homepage' id='navFilter'>
-                <ul id='menu' class='menu'>
-                    <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
-                    <li data-product='mouse' class='tag-products'>Mouse</li>
-                    <li data-product='keyboard' class='tag-products'>Teclado</li>
-                    <li data-product='headset' class='tag-products'>Headset</li>
-                    <li data-product='webcam' class='tag-products'>Webcam</li>
-                    <li data-product='mousepad' class='tag-products'>Mousepad</li>
-                </ul> 
-            </nav>
+          <main class='homepage-main'>
+            <section class='nav-filter-side'>
+              <nav class='nav-filter-homepage' id='navFilter'>
+                  <ul id='menu' class='menu'>
+                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
+                      <li data-product='mouse' class='tag-products'>Mouse</li>
+                      <li data-product='keyboard' class='tag-products'>Teclado</li>
+                      <li data-product='headset' class='tag-products'>Headset</li>
+                      <li data-product='webcam' class='tag-products'>Webcam</li>
+                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
+                  </ul> 
+              </nav>
+            </section>
        
-              <div id='cards-products' class='cards-products'>
+            <section id='cards-products' class='cards-products'>
               
-              </div>
+            </section>
           </main>
 
           <footer class='footer-homepage'>
@@ -64,7 +66,6 @@ export default () => {
 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();
-    // console.log(productsArr);
 
     if (category !== 'allProducts') {
       productsArr = productsArr.filter((product) => product.categoria.includes(category));
@@ -76,9 +77,9 @@ export default () => {
         <ul>
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
+        </ul>
           <button id='btn-modal' class="btn-modal">Ver mais</button>
           <section id="div-modal"></section>
-        </ul>
       </div>
     `).join('');
 

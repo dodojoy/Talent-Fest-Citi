@@ -41,6 +41,11 @@
     margin: 0rem 0.5rem;
 }
 
+.homepage-main{
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-filter-homepage{
     display: flex;
     flex-direction: column;
@@ -54,6 +59,7 @@
 .nav-filter-homepage li{
     margin: 1rem;
     color: #002D72;
+    cursor: pointer;
 }
 
 .nav-filter-homepage li:hover{
@@ -64,14 +70,48 @@
     margin-bottom: 3rem;
 }
 
-.categories{
-    margin: 1rem;
-    color: #53565A;
+.cards-products{
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 30px 0;
+    padding: 20px;
 }
 
-.cards-products{
-    height: 20vh;
-    width: 100%;
+.product-card{
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.product-card:hover{
+    background-color: rgba(0, 71, 133, 0.288);   
+}
+
+.product-card li{
+    list-style: none;
+    text-align: center;
+}
+
+.btn-modal{
+    height: 4vh;
+    padding: 0.4vh 0.6vw;
+    background-color: #002D72;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-modal:hover{
+    background-color: #00BDF2;
 }
 
 #img-card{
@@ -80,12 +120,13 @@
 }
 
 .footer-homepage{
-    margin: 2rem 0rem 0rem;
+    margin: -6rem 0rem 0rem;
     height: 12vh;
     width: 100%;
     background-color: #53565A;
     display: flex;
     flex-direction: column;
+
 }
 
 .footer-homepage img{
@@ -122,38 +163,47 @@
     display: none;
 }
 
-@media (max-width: 700px) {
-.div-menu{
-    display: block;
+@media (max-width: 768px) {
+    .div-menu{
+        display: block;
+    }
+
+    .div-menu:hover{
+        cursor: pointer;
+        background-color: #00BDF2;
+    }
+
+    .btn-menu{
+        background: transparent;
+        border: none;
+        width: 50%;
+        margin: 0.2rem;
+    }
+
+    .btn-menu:hover{
+        cursor: pointer;
+    }
+
+    .nav-filter-homepage{
+        display: none;
+    }
+
+    .nav-filter-homepage.active{
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-filter-homepage{
+        background-color: #b9b9b9;
+    }
+
+    .cards-products{
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.div-menu:hover{
-    cursor: pointer;
-    background-color: #00BDF2;
-}
-
-.btn-menu{
-    background: transparent;
-    border: none;
-    width: 50%;
-    margin: 0.2rem;
-}
-
-.btn-menu:hover{
-    cursor: pointer;
-}
-
-.nav-filter-homepage{
-    display: none;
-}
-
-.nav-filter-homepage.active{
-    display: flex;
-    width: 100%;
-}
-
-.nav-filter-homepage{
-    background-color: #b9b9b9;
-}
-
+@media (min-width: 700px){
+    .cards-products{
+        grid-template-columns: repeat(3, 1fr);
+  }
 }

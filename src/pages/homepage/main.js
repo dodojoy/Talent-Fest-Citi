@@ -59,22 +59,11 @@ export default () => {
   const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
   const menu = container.querySelector('#btnMenu');
 
-  
-  // const productCard = Array.from(container.querySelectorAll('#product-card'));
-
-  // productCard.forEach((card) => {
-  //   card.addEventListener('click', (el) => {
-  //     toggle(el.currentTarget.dataset.productId);
-  //     console.log(el.currentTarget.dataset.productId);
-  //   });
-  // });
-
   menu.addEventListener('click', () => {
     const navFilter = container.querySelector('#navFilter');
     navFilter.classList.toggle('active');
   });
 
- 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();
 
@@ -100,7 +89,7 @@ export default () => {
             <li class='modal-description-product'>${product.descricao}</li>
             <li class='modal-price-product'>R$ ${product.preco}</li>
           </ul>
-          <button id='buy-product'>Comprar</button>
+          <button id='buy-product' data-name-product=${product.nome} data-price-product=${product.preco}>Comprar</button>
         </div>
       </div>
     `).join('');
@@ -113,7 +102,9 @@ export default () => {
 
     const fade = container.querySelector('#fade');
 
-    buyBtn.addEventListener('click', () => {
+    buyBtn.addEventListener('click', (product) => {
+      const id = product.currentTarget.dataset.nameProduct;
+      const name = container.querySelector(`[data-name-product="${id}"]`);
       statusUser(async (logged) => {
         if (logged) {
           window.location.hash = '#qrcode';
@@ -121,6 +112,8 @@ export default () => {
           window.location.hash = '#login';
         }
       });
+      localStorage.setItem('price-product', name.dataset.priceProduct);
+      return localStorage.setItem('name-product', name.dataset.nameProduct);
     });
 
     function toggle(id) {
@@ -135,7 +128,7 @@ export default () => {
         toggle(el.currentTarget.dataset.productId);
       });
     });
-    
+
     closeModal.addEventListener('click', () => {
       const closemodal = container.querySelector('.modal-product');
       closemodal.classList.toggle('none');

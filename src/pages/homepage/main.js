@@ -1,3 +1,4 @@
+import { userStateChanged } from '../../lib/firebase-auth.js';
 import { getAllProducts } from '../../lib/firebase-firestore.js';
 
 export default () => {
@@ -57,6 +58,13 @@ export default () => {
 
   const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
   const menu = container.querySelector('#btnMenu');
+
+  buyBtn.addEventListener('click', () => {
+    if (userStateChanged !== null)
+    window.location.hash = '#login';
+    else 
+    window.location.hash = '#qrcode';
+  })
 
   // const productCard = Array.from(container.querySelectorAll('#product-card'));
 

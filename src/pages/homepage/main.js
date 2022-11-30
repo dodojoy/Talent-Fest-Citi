@@ -5,36 +5,23 @@ export default () => {
 
   const templateProducts = `
       <body>
-          <header>
-            <nav class='nav-bar-homepage'>
-                <div class="div-menu">
-                    <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
-                </div>
-                <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
-                        um arco vermelho em cima da palavra'>
-                <div>
-                    <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
-                    <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
-                </div>
-            </nav>
-          </header>
-          
-          <main class='homepage-main'>
-            <section class='nav-filter-side'>
-              <nav class='nav-filter-homepage' id='navFilter'>
-                  <ul id='menu' class='menu'>
-                      <li data-product='allProducts' class='list-allproducts tag-products'>Todos os Produtos</li>
-                      <li data-product='mouse' class='tag-products'>Mouse</li>
-                      <li data-product='keyboard' class='tag-products'>Teclado</li>
-                      <li data-product='headset' class='tag-products'>Headset</li>
-                      <li data-product='webcam' class='tag-products'>Webcam</li>
-                      <li data-product='mousepad' class='tag-products'>Mousepad</li>
-                  </ul> 
+        <div class="wrapper">
+            <header>
+              <nav class='nav-bar-homepage'>
+                  <div class="div-menu">
+                      <button id="btnMenu" class="btn-menu"><img src="assets/menu.png"</button>
+                  </div>
+                  <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
+                          um arco vermelho em cima da palavra'>
+                  <div>
+                      <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
+                      <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
+                  </div>
               </nav>
             </section>
        
             <section id='cards-products' class='cards-products'>
-              
+         
             </section>
           </main>
 

@@ -234,7 +234,7 @@
     display: none;
 }
 
-#fade, #modal-product {
+#fade, .modal-product {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
@@ -250,7 +250,7 @@
     z-index: 5;
 }
 
-#modal-product {
+.modal-product {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -275,12 +275,12 @@
     margin-left: 2rem;
 }
 
-#modal-product.none, #fade.none{
+.modal-product.none, #fade.none{
     opacity: 0;
     pointer-events: none;
 }
 
-#modal-product.none{
+.modal-product.none{
     top: 0;
 }
 

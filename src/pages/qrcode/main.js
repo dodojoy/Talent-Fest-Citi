@@ -1,8 +1,8 @@
 export default () => {
-    const Container = document.createElement('div');
-    Container.setAttribute('class', 'container');
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
 
-    const template = `
+  const template = `
         <body>
             <div class='wrapper'>
                 <header>
@@ -18,8 +18,13 @@ export default () => {
                         <img src='assets/pagamento.png' alt='imagem preta de uma mão de perfil com o simbolo de cifrão dentro de circulo em cima'>
                         <p id='txtMsg'>Mensagem de pagamento</p>
                     </div>
-                    <div id='divQrCode' class='div-qr-code'>
+                    <div>
+                        <p>Nome do comprador: ${localStorage.getItem('name')}</p>
+                        <p>Produto: ${localStorage.getItem('name-product')}</p>
+                        <p>Valor final: R$ ${localStorage.getItem('price-product')}</p>
+
                     </div>
+                    <div id='divQrCode' class='div-qr-code'></div>
                 </main>
 
                 <footer class='footer-homepage'>
@@ -36,15 +41,23 @@ export default () => {
         </body>
     
     `;
-    Container.innerHTML = template;
+  container.innerHTML = template;
 
-    const containerQrCode = Container.querySelector('#divQrCode')
-    const qrCode = `
+  function geraQR(name, price) {
+    const stringEncoded = name + price;
+    return `http://api.qrserver.com/v1/create-qr-code/?data=${stringEncoded}&size=150x150`;
+  }
+
+  const name = localStorage.getItem('name-product');
+  const priceProduct = localStorage.getItem('price-product');
+
+  const containerQrCode = container.querySelector('#divQrCode');
+  const qrCode = `
         <div id='QrCode'>
-            <img src='http://api.qrserver.com/v1/create-qr-code/?data=exemplo&size=150x150'/>
+            <img src='${geraQR(name, priceProduct)}'/>
         </div>
     `;
-    containerQrCode.innerHTML = qrCode;
+  containerQrCode.innerHTML = qrCode;
 
-    return Container;
-}
+  return container;
+};

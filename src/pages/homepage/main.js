@@ -142,12 +142,6 @@ export default () => {
       fade.classList.toggle('none');
     });
 
-    // [fade, closeModal].forEach((el) => {
-    //   el.addEventListener('click', () => {
-    //     toggle();
-    //   });
-    // });
-
     menuProducts.forEach((prod) => {
       prod.addEventListener('click', () => {
         printProducts(prod.dataset.product);

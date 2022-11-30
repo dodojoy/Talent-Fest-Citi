@@ -1,5 +1,5 @@
 import homepage from './pages/homepage/main.js';
-import cart from './pages/cart/main.js';
+import developers from './pages/developers/main.js';
 import login from './pages/login/main.js';
 import register from './pages/register/main.js';
 import qrcode from './pages/qrcode/main.js';
@@ -18,8 +18,8 @@ function loadRoots() {
     case '#register':
       main.appendChild(register());
       break;
-      case '#cart':
-        main.appendChild(cart());
+      case '#developers':
+        main.appendChild(developers());
         break;
       case '#qrcode':
         main.appendChild(qrcode());

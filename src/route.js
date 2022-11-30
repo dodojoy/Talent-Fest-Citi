@@ -2,7 +2,7 @@ import homepage from './pages/homepage/main.js';
 // import cart from './pages/cart/main.js';
 import login from './pages/login/main.js';
 import register from './pages/register/main.js';
-// import qrcode from './pages/qrcode/main.js';
+import qrcode from './pages/qrcode/main.js';
 
 const main = document.querySelector('#root');
 
@@ -21,9 +21,9 @@ function loadRoots() {
     //   case '#cart':
     //     main.appendChild(cart());
     //     break;
-    //   case '#qrcode':
-    //     main.appendChild(qrcode());
-    //     break;
+      case '#qrcode':
+        main.appendChild(qrcode());
+        break;
     default:
       main.appendChild(homepage());
   }

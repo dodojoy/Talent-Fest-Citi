@@ -38,11 +38,20 @@ Utilizamos a feramenta do Github, chamada Github Projects para o nosso planejame
 
 
 
+![prototipo-tela1](https://user-images.githubusercontent.com/57406239/204919851-565a2485-2259-4b1c-b818-44e92411cb04.png)
+![prototipo-tela2](https://user-images.githubusercontent.com/57406239/204920159-70e39160-3a25-4199-beb2-77b12554590b.png)
+![prototipo-tela3](https://user-images.githubusercontent.com/57406239/204920213-9ecaa2ef-8283-4aa5-b0f1-2d0a0965174b.png)
+![prototipo-tela4](https://user-images.githubusercontent.com/57406239/204920256-afb26d8b-eb15-4fb4-916d-be75cf0c4d0d.png)
+![prototipo-tela5](https://user-images.githubusercontent.com/57406239/204920313-6574282b-180c-41c6-a200-d774dc9e02d5.png)
+![prototipo-tela6](https://user-images.githubusercontent.com/57406239/204920376-9f0b6f0f-5956-4346-8ddd-f95f8cb5069d.png)
+
+
+
 ## 5. Resultado
 
 
 
 ## 6. Ferramentas utilizadas
 
-Notion, Figma, GoogleForms, Vs Code, Firebase Auth, Cloud Firestore <br>
+Notion, Figma, GoogleForms, Vs Code, Firebase Auth, Cloud Firestore.
 Linguagens: HTML5, CSS3, Javascript.

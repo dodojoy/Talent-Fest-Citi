@@ -112,11 +112,13 @@ export default () => {
 
     container.querySelector('#cards-products').innerHTML = productsTemplate;
 
-    const openModal = container.querySelector('#open-modal');
+    const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
 
-    openModal.addEventListener('click', () => {
-      toggle();
+    openModal.forEach((btn) => {
+      btn.addEventListener('click', (el) => {
+        toggle(el.currentTarget.dataset.productId);
+      });
     });
 
     [fade, closeModal].forEach((el) => {

@@ -1,7 +1,5 @@
 import { getAllProducts } from '../../lib/firebase-firestore.js';
 
-import products from '../products/main.js'
-
 export default () => {
   const container = document.createElement('div');
 
@@ -38,6 +36,18 @@ export default () => {
               </div>
           </main>
 
+          <div id="fade" class="none"></div>
+
+          <div id='modal-product' class='none'>
+            <button id='close-modal'>X</button>
+            <ul>
+              <li>nome</li>
+              <li>descrição</li>
+              <li>preço</li>
+            </ul>
+            <button id='buy-product'>Comprar</button>
+          </div>
+
           <footer class='footer-homepage'>
           <div class='footer-logo-links'>
             <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
@@ -56,15 +66,32 @@ export default () => {
 
   const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
   const menu = container.querySelector('#btnMenu');
+  const modal = container.querySelector('#modal-product');
+  const buyBtn = container.querySelector('#buy-product');
+  const fade = container.querySelector('#fade');
+
+  function toggle(id) {
+    modal.classList.toggle('none');
+    buyBtn.setAttribute('data-productId', id);
+    fade.classList.toggle('none');
+  }
+
+  // const productCard = Array.from(container.querySelectorAll('#product-card'));
+
+  // productCard.forEach((card) => {
+  //   card.addEventListener('click', (el) => {
+  //     toggle(el.currentTarget.dataset.productId);
+  //     console.log(el.currentTarget.dataset.productId);
+  //   });
+  // });
 
   menu.addEventListener('click', () => {
-    const navFilter = container.querySelector('#navFilter')
+    const navFilter = container.querySelector('#navFilter');
     navFilter.classList.toggle('active');
   });
 
   const printProducts = async (category) => {
     let productsArr = await getAllProducts();
-    // console.log(productsArr);
 
     if (category !== 'allProducts') {
       productsArr = productsArr.filter((product) => product.categoria.includes(category));
@@ -76,19 +103,24 @@ export default () => {
         <ul>
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
-          <button id='btn-modal' class="btn-modal">Ver mais</button>
-          <section id="div-modal"></section>
-        </ul>
+          </ul>
+          <button data-product-id=${product.id} id='open-modal'>Ver mais</button>
       </div>
     `).join('');
 
     container.querySelector('#cards-products').innerHTML = productsTemplate;
 
-    const btnModal = container.querySelector('#btn-modal')
-    console.log(btnModal)
-    btnModal.addEventListener('click', () => {
-      const divModal = container.querySelector('#div-modal');
-      divModal.appendChild(products());
+    const openModal = container.querySelector('#open-modal');
+    const closeModal = container.querySelector('#close-modal');
+
+    openModal.addEventListener('click', () => {
+      toggle();
+    });
+
+    [fade, closeModal].forEach((el) => {
+      el.addEventListener('click', () => {
+        toggle();
+      });
     });
 
     menuProducts.forEach((prod) => {
@@ -100,6 +132,5 @@ export default () => {
 
   printProducts('allProducts');
 
- 
   return container;
 };

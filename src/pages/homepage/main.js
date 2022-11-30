@@ -38,18 +38,6 @@ export default () => {
             </section>
           </main>
 
-          <div id="fade" class="none"></div>
-
-          <div id='modal-product' class='none'>
-            <button id='close-modal'>X</button>
-            <ul>
-              <li>nome</li>
-              <li>descrição</li>
-              <li>preço</li>
-            </ul>
-            <button id='buy-product'>Comprar</button>
-          </div>
-
           <footer class='footer-homepage'>
           <div class='footer-logo-links'>
             <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
@@ -68,15 +56,6 @@ export default () => {
 
   const menuProducts = Array.from(container.querySelectorAll('.tag-products'));
   const menu = container.querySelector('#btnMenu');
-  const modal = container.querySelector('#modal-product');
-  const buyBtn = container.querySelector('#buy-product');
-  const fade = container.querySelector('#fade');
-
-  function toggle(id) {
-    modal.classList.toggle('none');
-    buyBtn.setAttribute('data-productId', id);
-    fade.classList.toggle('none');
-  }
 
   // const productCard = Array.from(container.querySelectorAll('#product-card'));
 
@@ -106,7 +85,19 @@ export default () => {
           <li>${product.nome}</li>
           <li>R$ ${product.preco}</li>
         </ul>
-        <button data-product-id=${product.id} id='open-modal' class="btn-modal">Ver mais</button>
+        <button data-product-id=${product.SKU} id='open-modal' class="btn-modal">Ver mais</button>
+        <div id="fade" class="none"></div>
+  
+        <div id='modal-product' class='none'>
+          <button id='close-modal'>X</button>
+          <img class='img-modal-product' src='${product.img}'></img>
+          <ul>
+            <li class='modal-name-product'>${product.nome}</li>
+            <li class='modal-description-product'>${product.descricao}</li>
+            <li class='modal-price-product'>R$ ${product.preco}</li>
+          </ul>
+          <button id='buy-product'>Comprar</button>
+        </div>
       </div>
     `).join('');
 
@@ -114,10 +105,20 @@ export default () => {
 
     const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
+    const modal = container.querySelector('#modal-product');
+    // const buyBtn = container.querySelector('#buy-product');
+    const fade = container.querySelector('#fade');
+
+    function toggle(id) {
+      modal.classList.toggle('none');
+      modal.setAttribute('data-idPost', id);
+      fade.classList.toggle('none');
+    }
 
     openModal.forEach((btn) => {
       btn.addEventListener('click', (el) => {
         toggle(el.currentTarget.dataset.productId);
+        console.log(el.currentTarget.dataset.productId);
       });
     });
 

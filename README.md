@@ -60,27 +60,34 @@ Utilizamos o método [Kanban](https://www.alura.com.br/artigos/metodo-kanban).
 
 **HOMEPAGE**<br>
 Tela inicial onde o usuario pode ver os produtos disponiveis na loja.
+
 ![prototipo-tela1](https://user-images.githubusercontent.com/57406239/204919851-565a2485-2259-4b1c-b818-44e92411cb04.png)
 **CARRINHO**<br>
 Tela onde o usuario pode ver os produtos em seu pedido de compra e solicitar a geração do QRCode para pagamento.
+
 ![prototipo-tela2](https://user-images.githubusercontent.com/57406239/204920159-70e39160-3a25-4199-beb2-77b12554590b.png)
 **LOGIN**<br>
 Tela de login onde o usuário tem a opção de entrar com e-mail e senha cadastrados ou fazer login com o Google.
+
 ![prototipo-tela3](https://user-images.githubusercontent.com/57406239/204920213-9ecaa2ef-8283-4aa5-b0f1-2d0a0965174b.png)
 **REGISTER**<br>
 Tela onde o usuario pode fazer o cadastro no e-commerce.
+
 ![prototipo-tela4](https://user-images.githubusercontent.com/57406239/204920256-afb26d8b-eb15-4fb4-916d-be75cf0c4d0d.png)
 **PAYMENT**<br>
 Tela onde o usuário tem o QRCode processado para fazer o pagamento da compra.
+
 ![prototipo-tela5](https://user-images.githubusercontent.com/57406239/204920313-6574282b-180c-41c6-a200-d774dc9e02d5.png)
 **ABOUT DEVELOPERS**<br>
 Página com as informações das desenvolvedoras da aplicação.
+
 ![prototipo-tela6](https://user-images.githubusercontent.com/57406239/204920376-9f0b6f0f-5956-4346-8ddd-f95f8cb5069d.png)
 
 
 
 ## 5. Resultado
 Página inical da nossa versão final! Confira o site completo pelo link: [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
+
 ![pagina](https://user-images.githubusercontent.com/98547636/205085946-0dfb787c-8e0e-4848-a768-69b67cd18a44.jpeg)
 
 
@@ -97,14 +104,14 @@ Página inical da nossa versão final! Confira o site completo pelo link: [aqui]
 
 ### 7.1 Ferramentas utilizadas
   <ul>
-    <li>GitHub Projects
-    <li>Figma
-    <li>Vs Code
-    <li> ZOOM Meetings
-    <li>Firebase Auth
-    <li>Cloud Firestore
-    <li>API QRCode Generator
-    <li>Metroretro
+    ✔️ GitHub Projects
+    ✔️ Figma
+    ✔️ Vs Code
+    ✔️ ZOOM Meetings
+    ✔️ Firebase Auth
+    ✔️ Cloud Firestore
+    ✔️ API QRCode Generator
+    ✔️ >Metroretro
   </ul>
   
 ### 7.2 Tech Skills

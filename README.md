@@ -1,25 +1,29 @@
 
 <h1> Talent Fest: Desafio Citi :blue_heart: :tada: </h1>
-<div align:"center">
-Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
-Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
-:woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih).
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>
+Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
+Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), 
+:woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), 
+:woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac), 
+:woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e 
+:woman_technologist: Michelle Santana [@asmih](https://github.com/asmih).
+
+ <div align:"center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="Node.js" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 30px;"/> 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="height: 30px;"/>
-
+  </div>
   <br>
 
   **Status do Projeto:** _Concluído_ 
     
   O **resultado final** pode ser visitado [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
 
-</div>
+
 
 ## Índice
 

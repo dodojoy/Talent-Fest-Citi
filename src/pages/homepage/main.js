@@ -16,8 +16,7 @@ export default () => {
               <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
               <div>
                 <a href='#login' class='btn-login'><img src='assets/login.png' alt='Botão branco de redirecionamento à página de login'></a>
-                <a href='#cart' class='btn-cart'><img src='assets/carrinho.png' alt='Botão branco de redirecionamento ao carrinho'></a>
-                <a href='#login' class='logout-icon' src='' alt='signout icon'>
+                <a href='#login' class='logout-icon' id='logout-btn'><img src='./assets/logout.png' alt='signout icon'></a>
               </div>
           </nav>
         </header>
@@ -100,7 +99,6 @@ export default () => {
     const openModal = Array.from(container.querySelectorAll('.btn-modal'));
     const closeModal = container.querySelector('#close-modal');
     const buyBtn = container.querySelector('#buy-product');
-    const logoutBtn = feedContainer.querySelector('#logout-btn');
     const fade = container.querySelector('#fade');
 
     buyBtn.addEventListener('click', (product) => {
@@ -143,6 +141,7 @@ export default () => {
     });
   };
 
+  const logoutBtn = container.querySelector('#logout-btn');
   logoutBtn.addEventListener('click', () => {
     logoff();
   });

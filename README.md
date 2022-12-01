@@ -2,10 +2,10 @@
 <h1> Talent Fest: Desafio Citi :blue_heart: :tada: </h1>
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
-Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), 
-:woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), 
-:woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac), 
-:woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e 
+Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), <br>
+:woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), <br>
+:woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac), <br>
+:woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e <br>
 :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih).
 
  <div align-items:"center">

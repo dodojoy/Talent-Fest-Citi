@@ -1,15 +1,15 @@
 export default () => {
-    const Container = document.createElement('div');
-    Container.setAttribute('class', 'container');
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
 
-    const template = `
+  const template = `
         <body>
             <div class='wrapper'>
                 <header>
-                    <nav class='nav-bar-homepage'>
+                    <nav class='nav-bar-qrcode'>
                         <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
                                 um arco vermelho em cima da palavra'>
-                        <a href='#homepage' class='btn-homepage'><img src='assets/homepage.png' alt='Botão branco de redirecionamento à página inicial'>Página Inicial</a>
+                        <a href='#homepage' class='btn-homepage'><img src='assets/homepage.png' alt='Botão branco de redirecionamento à página inicial'></a>
                     </nav>
                 </header>
 
@@ -100,7 +100,7 @@ export default () => {
         </body>
     
     `;
-    Container.innerHTML = template;
+  container.innerHTML = template;
 
-    return Container;
-}
+  return container;
+};

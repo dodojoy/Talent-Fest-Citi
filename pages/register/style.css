@@ -1,0 +1,33 @@
+.input-name, .input-password-confirm{
+    height: 6vh;
+    border-radius: 1px;
+    border: 0.10rem solid #002D72;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+#btn-register {
+    height: 6vh;
+    padding: 0.3vh 0.3vw;
+    background-color: #002D72; 
+    border: none;
+    color: white;
+}
+#btn-register:hover{
+    background-color: #00BDF2;
+}
+
+#btn-pag-login{
+    color: #002D72;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 1440px){
+    
+    #btn-pag-login{
+        color: #002D72;
+    }
+}

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-auth{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 5vh;
+    width:30vw;    
+}
+
+.start {
+    margin: 4vh 0 8vh 0;
+    text-align: center;
+    color: #002D72;
+}
+
+.form-input{
+   display: flex;
+   flex-direction: column; 
+   row-gap: 2.5vh;
+   width: 85vw;
+}
+
+.input-email, .input-password{
+    height: 6vh;
+    border-radius: 1px;
+    border: 0.10rem solid #002D72;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+input::placeholder{
+    color: #002D72;
+    text-align:left;
+}
+
+#btn-login{
+    height: 6vh;
+    padding: 0.3vh 0.3vw;
+    background-color: #002D72;
+    border: none;
+    color: white;
+    margin-bottom: 4vh;
+}
+
+#btn-login:hover{
+    background-color: #00BDF2;
+}
+
+.or-tag {
+    margin-bottom: 4vh;
+    color:#002D72;
+}
+
+#btn-google {
+    background-color: white;
+    margin-bottom: 1vh;
+    border: none;
+}
+
+#img-google {
+    width: auto;
+    height: 6vh;
+}
+
+#reset-password {
+    color:#002D72;
+}
+
+.account {
+    color: #002D72;
+    margin-top: 5vh;
+}
+
+#btn-pag-register {
+    color: #002D72;
+}
+
+.form-warning-messages {
+    margin: 2vh 0 3vh 0;
+    align-self: center;
+}
+
+@media (min-width: 768px ){
+    .logo{
+        width: 15vw;
+    }
+
+    #btn-pag-register {
+        color: #002D72;
+    }
+    .form-input{
+        width: 40vw;
+    }
+}

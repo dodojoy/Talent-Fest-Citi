@@ -24,7 +24,9 @@ export default () => {
                         </div>
                     </div>
 
-                    <div id='divQrCode' class='div-qr-code'></div>
+                    <div id='divQrCode' class='div-qr-code'>
+                        <p class='qrcode-message'>Utilize o QRcode abaixo para realizar o pagamento</p>
+                    </div>
                     <span class='or-copy-tag'>ou</span>
                     <button id='btnSend'>Enviar <img id='iconSend'src='assets/send.png' alt='Botão branco de enviar'></button>
                 </main>
@@ -61,7 +63,7 @@ export default () => {
             <img src='${geraQR(name, priceProduct)}'/>
         </div>
     `;
-  containerQrCode.innerHTML = qrCode;
+  containerQrCode.innerHTML += qrCode;
   const btnSend = container.querySelector('#btnSend');
 
   btnSend.addEventListener('click', () => alert('Código copiado com sucesso!'));

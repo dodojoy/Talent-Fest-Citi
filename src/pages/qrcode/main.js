@@ -9,21 +9,20 @@ export default () => {
                     <nav class='nav-bar-qrcode'>
                         <img class='img-logo-nav' src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e 
                                 um arco vermelho em cima da palavra'>
-                        <a href='#homepage' class='btn-homepage'><img src='assets/homepage.png' alt='Botão branco de redirecionamento à página inicial'>Página Inicial</a>
+                        <a href='#homepage' class='btn-homepage'><img src='assets/homepage.png' alt='Botão branco de redirecionamento à página inicial'></a>
                     </nav>
                 </header>
 
-                <main>
+                <main class='content-qrcode'>
                     <div id='payMsg' class='pay-msg'>
                         <img src='assets/pagamento.png' alt='imagem preta de uma mão de perfil com o simbolo de cifrão dentro de circulo em cima'>
-                        <p id='txtMsg'>Mensagem de pagamento</p>
+                        <div>
+                            <p>Nome do comprador: ${localStorage.getItem('username')}</p>
+                            <p>Produto: ${localStorage.getItem('name-product')}</p>
+                            <p>Valor final: R$ ${localStorage.getItem('price-product')}</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Nome do comprador: ${localStorage.getItem('username')}</p>
-                        <p>Produto: ${localStorage.getItem('name-product')}</p>
-                        <p>Valor final: R$ ${localStorage.getItem('price-product')}</p>
 
-                    </div>
                     <div id='divQrCode' class='div-qr-code'></div>
                 </main>
 

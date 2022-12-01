@@ -85,3 +85,4 @@ Página com as informações das desenvolvedoras da aplicação.
  <li>Vanilla Javascript
  <li>CSS3
  <li>HTML5
+ <li>Git e Github

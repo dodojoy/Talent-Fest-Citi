@@ -103,16 +103,16 @@ Página inical da nossa versão final! Confira o site completo pelo link: [aqui]
 ## 7. Ferramentas e Tech Skills
 
 ### 7.1 Ferramentas utilizadas
-  <ul>
-    ✔️ GitHub Projects
-    ✔️ Figma
-    ✔️ Vs Code
-    ✔️ ZOOM Meetings
-    ✔️ Firebase Auth
-    ✔️ Cloud Firestore
-    ✔️ API QRCode Generator
-    ✔️ >Metroretro
-  </ul>
+  
+   - ✔️ GitHub Projects
+   - ✔️ Figma
+   - ✔️ Vs Code
+   - ✔️ ZOOM Meetings
+   - ✔️ Firebase Auth
+   - ✔️ Cloud Firestore
+   - ✔️ API QRCode Generator
+   - ✔️ >Metroretro
+
   
 ### 7.2 Tech Skills
 <ul>

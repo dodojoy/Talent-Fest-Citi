@@ -2,13 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
+.container-auth{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
 .logo{
-    margin:10vh 35vw 0 35vw;
+    margin-top: 5vh;
     width:30vw;    
 }
 
-.start{
-    margin-top: 3vh;
+.start {
+    margin: 4vh 0 8vh 0;
     text-align: center;
     color: #002D72;
 }
@@ -17,9 +26,7 @@
    display: flex;
    flex-direction: column; 
    row-gap: 2.5vh;
-   margin: 4vh 0 0 7vw;
    width: 85vw;
-   padding: 0.3vh;
 }
 
 .input-email, .input-password{
@@ -27,6 +34,7 @@
     border-radius: 1px;
     border: 0.10rem solid #002D72;
     align-items: center;
+    padding-left: 0.5rem;
 }
 
 input::placeholder{
@@ -37,14 +45,19 @@ input::placeholder{
 #btn-login{
     height: 6vh;
     padding: 0.3vh 0.3vw;
-    margin: 0 0 1vh 0;
     background-color: #002D72;
     border: none;
     color: white;
+    margin-bottom: 4vh;
 }
 
 #btn-login:hover{
     background-color: #00BDF2;
+}
+
+.or-tag {
+    margin-bottom: 4vh;
+    color:#002D72;
 }
 
 #btn-google {
@@ -60,77 +73,31 @@ input::placeholder{
 
 #reset-password {
     color:#002D72;
-    margin: 1vh 0 0 30vw;
-}
-
-.footer{
-    margin-top: 3vh;
-    flex-wrap: wrap;
 }
 
 .account {
-    margin: 12vh 0 0 28vw;
     color: #002D72;
+    margin-top: 5vh;
 }
 
 #btn-pag-register {
-    margin: 20vh 0 0 37vw;
     color: #002D72;
 }
 
-@media (min-width: 1024px ){
+.form-warning-messages {
+    margin: 2vh 0 3vh 0;
+    align-self: center;
+}
+
+@media (min-width: 768px ){
     .logo{
-        margin: 8vh 30vw 0 42vw;
         width: 15vw;
     }
 
-    .start {
-        margin: 3.5vh 30vw 0 31vw;
-    }
-
-    .form-input{
-        width: 30vw;
-        margin-left: 75vh;      
-    }
-
-    #btn-login{
-        width: 90vw;
-    }
-
-    #reset-password{
-        margin: 1vh 0 0 46vw;
-    }
-
-    .account {
-        margin: 8vh 0 0 46vw;
-    }
-
     #btn-pag-register {
-        margin: 20vh 0 0 49vw;
         color: #002D72;
     }
-}
-
-@media (min-width: 1100px){
-    .start{
-       margin: 4vh 25vw 0 30vw;
-    }
-
-    #btn-login {
-        width: 63vh;
-        margin: 0 0 1vh 0;
-    }
-
-    #btn-register {
-      margin: 5vh 0 0 49vw;
-    }
-        
-    .account {
-       margin: 10vh 0 0 46vw;
-    }
-
-    #btn-pag-register {
-      margin: 5vh 0 0 49vw;
-      color: #002D72;
+    .form-input{
+        width: 40vw;
     }
 }

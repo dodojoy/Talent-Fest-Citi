@@ -61,7 +61,7 @@ Utilizamos o método [Kanban](https://www.alura.com.br/artigos/metodo-kanban).
 ![Captura de tela de 2022-11-30 14-38-59](https://user-images.githubusercontent.com/57406239/204869213-cab3dcb2-0cb0-47cb-8d76-1ba31e143c17.png)
 
 
-## 4. Prototipo
+## 4. Protótipo
 
 **HOMEPAGE**<br>
 Tela inicial onde o usuario pode ver os produtos disponiveis na loja.

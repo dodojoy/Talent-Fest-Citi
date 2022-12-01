@@ -17,7 +17,7 @@ Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](h
 
   **Status do Projeto:** _Concluído_ 
     
-  O **resultado final** pode ser visitado [aqui](https:)!!
+  O **resultado final** pode ser visitado [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
 
 </div>
 
@@ -43,7 +43,7 @@ O principal desafio era o de consumir uma API que fizesse o processamento de um 
 
 O projeto foi desenvolvido em um squad de 5 pessoas, durante APENAS 3 DIAS. E as principais ferramentas utilizadas durante o processo foram: Github Projects, para o planning e divisão das tasks; Figma, para o processo de prototipação de alta fidelidade; Metroretro para as sessões de retrospectiva diárias; Zoom Meetings, para sessões de pair programming e encontros gerais.
 
-Além disso, utilizamos o conjunto de serviços de hospedagem Firebase. Para manipularmos a parte de backend da aplicação, utilizamos os serviços Firebase Authentication - para fazer o processo de autenticação de usuários, e o Cloud Firestore - para a criação e manutenção do nosso banco de dados.
+Além disso, o projeto está responsivo e dispõe das ferramentas básicas de acessibilidade (como HTML semântico e texto alternativo com descrição das imagens) utilizamos o conjunto de serviços de hospedagem Firebase. Para manipularmos a parte de backend da aplicação, utilizamos os serviços Firebase Authentication - para fazer o processo de autenticação de usuários, e o Cloud Firestore - para a criação e manutenção do nosso banco de dados.
 
 Também usamos a API [QRCode Generator](https://goqr.me/api/) para gerar o QRCode.
 
@@ -80,14 +80,22 @@ Página com as informações das desenvolvedoras da aplicação.
 
 
 ## 5. Resultado
+Página inical da nossa versão final! Confira o site completo pelo link: [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
+![pagina](https://user-images.githubusercontent.com/98547636/205085946-0dfb787c-8e0e-4848-a768-69b67cd18a44.jpeg)
 
 
 
+## 6. Implementações Futuras
+ <ul>
+    <li>Criar uma página de carrinho, onde o usuário possa ver detalhes do produto, adicionar mais de um item e alterar a quantidade de itens.
+    <li>Criar uma página do administrador, onde seja possível a inclusão de novos itens para venda.
+    <li>Implementar mais ferramentas de acessibilidade.
+    <li> Integrar o pagamento com as instituições financeiras.
+  </ul>
 
+## 7. Ferramentas e Tech Skills
 
-## 6. Ferramentas e Tech Skills
-
-### 6.1 Ferramentas utilizadas
+### 7.1 Ferramentas utilizadas
   <ul>
     <li>GitHub Projects
     <li>Figma
@@ -99,7 +107,7 @@ Página com as informações das desenvolvedoras da aplicação.
     <li>Metroretro
   </ul>
   
-### 6.2 Tech Skills
+### 7.2 Tech Skills
 <ul>
  <li>Vanilla Javascript
  <li>CSS3

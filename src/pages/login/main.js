@@ -12,22 +12,23 @@ export default () => {
   resetContainer.setAttribute('class', 'container');
 
   const template = `
-    <img class='logo' src='assets/logoazul.png'>
-    <h1 class='start'>Bem vindo ao Citi Shop</h1>
-    <form class='form-input'>
-      <input class='input-email' type='email' id='email' placeholder='E-MAIL'>
-      <input class='input-password' type='password' id='password' placeholder='SENHA'>
-      <input id='btn-login' type='submit' value='ENTRAR' />
+    <main class='container-auth'>
+      <img class='logo' src='assets/logoazul.png'>
+      <h1 class='start'>Bem vindo ao Citi Shop</h1>
+      <form class='form-input'>
+        <input class='input-email' type='email' id='email' placeholder='E-MAIL'>
+        <input class='input-password' type='password' id='password' placeholder='SENHA'>
+        <input id='btn-login' type='submit' value='ENTRAR' />
+        <p id="form-validation-messages" class="form-warning-messages hide"></p>
+        <p id="firebase-warning-messages" class="form-warning-messages hide"></p>
+        </form>
+      <span class='or-tag'>ou</span>
       <button id='btn-google'>
         <img id='img-google' src='assets/btn_google_signin_light_normal_web@2x.png' alt='botão de login com conta google'>
       </button>
-    </form>
-    <p id="form-validation-messages" class="form-warning-messages hide"></p>
-    <p id="firebase-warning-messages" class="form-warning-messages hide"></p>
-    <footer class='footer'>
       <h4 class='account'>Não possui uma conta?</h4>
       <a id='btn-pag-register' href='#register'>Cadastre-se!</a>
-    </footer>
+    </main>
     `;
   resetContainer.innerHTML = template;
 

@@ -20,7 +20,7 @@
   </div>
   <br>
   <div align="center">
-  **Status do Projeto:** Concluído!
+   <strong>Status do Projeto:</strong> Concluído! ✔️
     
   O **resultado final** pode ser visitado [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
   </div>

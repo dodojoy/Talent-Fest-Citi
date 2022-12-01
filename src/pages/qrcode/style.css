@@ -47,9 +47,15 @@
 }
 .div-qr-code{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5rem;
+}
+
+.qrcode-message{
+    margin-bottom: 3vh;
+    font-size: 1.1rem;
 }
 
 #btnSend {

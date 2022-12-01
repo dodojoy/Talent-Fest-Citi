@@ -92,7 +92,7 @@ Página com as informações das desenvolvedoras da aplicação.
 ## 5. Resultado
 Página inical da nossa versão final! Confira o site completo pelo link: [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
 
-![pagina](https://user-images.githubusercontent.com/98547636/205085946-0dfb787c-8e0e-4848-a768-69b67cd18a44.jpeg)
+![pagina](https://user-images.githubusercontent.com/98547636/205091591-d82dd3d8-1ed5-4e44-ae2b-4861085d6e1b.jpeg)
 
 
 

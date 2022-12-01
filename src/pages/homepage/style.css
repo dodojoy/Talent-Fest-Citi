@@ -306,6 +306,7 @@
     font-size: 1.5rem;
     align-self: start;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .modal-product.none, #fade.none{

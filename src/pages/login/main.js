@@ -1,18 +1,17 @@
 import {
   loginWithEmailAndPassword,
-  loginWithGoogle
+  loginWithGoogle,
 } from '../../lib/firebase-auth.js';
 
 import {
-
   validateLoginForm,
 } from '../../lib/validation.js';
 
 export default () => {
-    const resetContainer = document.createElement('div');
-    resetContainer.setAttribute('class', 'container');
+  const resetContainer = document.createElement('div');
+  resetContainer.setAttribute('class', 'container');
 
-    const template = `
+  const template = `
     <img class='logo' src='assets/logoazul.png'>
     <h1 class='start'>Bem vindo ao Citi Shop</h1>
     <form class='form-input'>
@@ -23,19 +22,21 @@ export default () => {
         <img id='img-google' src='assets/btn_google_signin_light_normal_web@2x.png' alt='botão de login com conta google'>
       </button>
     </form>
-    <p id='reset-password'>Esqueceu sua senha?</p>
-    <p class='msg-error'></p>
+    <p id="form-validation-messages" class="form-warning-messages hide"></p>
+    <p id="firebase-warning-messages" class="form-warning-messages hide"></p>
     <footer class='footer'>
       <h4 class='account'>Não possui uma conta?</h4>
       <a id='btn-pag-register' href='#register'>Cadastre-se!</a>
     </footer>
     `;
-    resetContainer.innerHTML = template;
+  resetContainer.innerHTML = template;
 
   const email = resetContainer.querySelector('#email');
   const password = resetContainer.querySelector('#password');
   const btnLogin = resetContainer.querySelector('#btn-login');
- 
+  const formValidationMessages = resetContainer.querySelector('#form-validation-messages');
+  const firebaseWarningMessages = resetContainer.querySelector('#firebase-warning-messages');
+
   btnLogin.addEventListener('click', () => {
     const formValidation = validateLoginForm(email.value, password.value);
     if (formValidation) {
@@ -44,12 +45,10 @@ export default () => {
       formValidationMessages.innerHTML = formValidation;
     } else {
       loginWithEmailAndPassword(email.value, password.value)
-      .then(() => {
-        window.location.hash = '#homepage';
-      })
-      .catch((error) => {
-       
-        });
+        .then(() => {
+          window.location.hash = '#homepage';
+        })
+        .catch((error) => error);
     }
   });
 
@@ -57,15 +56,10 @@ export default () => {
 
   googleBtn.addEventListener('click', () => {
     loginWithGoogle()
-    .then(() => {
-      window.location.hash = '#homepage';
-    })
-      .catch((error) => {
-
-    });
+      .then(() => {
+        window.location.hash = '#homepage';
+      })
+      .catch((error) => error);
   });
   return resetContainer;
 };
-
-  
-  

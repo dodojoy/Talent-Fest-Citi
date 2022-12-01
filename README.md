@@ -3,8 +3,8 @@
 <div align="center">
    Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
    Projeto desenvolvido pelo squad: <br> 
-   :woman_technologist: Andrea Santos (<a href="https://github.com/Canzua">@Canzua</a>), <br>
-   :woman_technologist: Anna Clara (<a href="https://github.com/andradeannac">@andradeannac</a>), <br>
+   :woman_technologist: Andrea dos Santos (<a href="https://github.com/Canzua">@Canzua</a>), <br>
+   :woman_technologist: Anna Clara Andrade(<a href="https://github.com/andradeannac">@andradeannac</a>), <br>
    :woman_technologist: Joyce Teodoro (<a href="https://github.com/dodojoy">@dodojoy</a>), <br>
    :woman_technologist: Michelle Santana (<a href="https://github.com/asmih">@asmih</a>) e <br>
    :woman_technologist: Polyana Magalhães (<a href="https://github.com/polyanagm">@polyanagm</a>).<br>

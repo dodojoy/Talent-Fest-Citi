@@ -26,6 +26,10 @@ export default () => {
                     <div id='divQrCode' class='div-qr-code'></div>
                 </main>
 
+                <div id='send'><button id='btnSend'>Enviar <img id='iconSend'src='assets/send.png' alt='Botão branco de enviar'></button>
+                </div>
+                
+
                 <footer class='footer-homepage'>
                     <div class='footer-logo-links'>
                         <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
@@ -57,6 +61,11 @@ export default () => {
         </div>
     `;
   containerQrCode.innerHTML = qrCode;
+  const btnSend = container.querySelector('#send');
+
+  btnSend.addEventListener ("click", () => {
+    alert("Código copiado com sucesso!")
+  });
 
   return container;
 };

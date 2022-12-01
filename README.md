@@ -8,7 +8,7 @@ Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](h
 :woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e 
 :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih).
 
- <div align:"center">
+ <div align-items:"center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" style="height: 30px;"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height: 30px;"/>

@@ -44,7 +44,7 @@ export default () => {
             <div class='footer-logo-links'>
               <img src='assets/logo-citi.png' alt='Logo do CitiBank, com a palavra Citi escrito em letras brancas e um arco vermelho em cima da palavra'>
               <a href='#developers'>Desenvolvedoras</a>
-              <a href='https://corporateportal.brazil.citibank.com/quem-somos.htm' target='_blank'>Sobre o Cit</a>
+              <a href='https://corporateportal.brazil.citibank.com/quem-somos.htm' target='_blank'>Sobre o Citi</a>
             </div>
             <div class='footer-copyright'>
               <p>© 2022 Citigroup Inc. Todos os direitos reservados.</p>

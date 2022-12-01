@@ -1,8 +1,8 @@
-# Talent Fest: Desafio Citi
+# Talent Fest: Desafio Citi :blue_heart: :tada:
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
-Projeto desenvolvido pelo squad: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), Andrea Santos [@Canzua](https://github.com/Canzua), Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
-Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e Michelle Santana [@asmih](https://github.com/asmih).
+Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
+:woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih).
 
 
 ## Índice
@@ -22,8 +22,8 @@ Neste  desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória, 
 
 
 ## 2. Resumo do projeto
-O projeto CitiShop é um e-commerce que foi criado à partir do desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória.
-O principal desafio era o de consumir uma API que fizesse o processamento de um pedido, gerando um QRCode para pagamento.
+O projeto CitiShop :computer: é um e-commerce que foi criado à partir do desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória.
+O principal desafio era o de consumir uma API que fizesse o processamento de um pedido, gerando um QRCode para pagamento :credit_card: :dollar:.
 
 O projeto foi desenvolvido em um squad de 5 pessoas, durante APENAS 3 DIAS de desenvolvimento. E as principais ferramentas utilizadas durante o processo foram: Github Projects, para o planning e divisão das tasks; Figma, para o processo de prototipação de alta fidelidade; Metroretro para as sessões de retrospectiva diárias; Zoom Meetings, para sessões de pair programming e encontros gerais.
 
@@ -34,10 +34,9 @@ Também usamos a API [QRCode Generator](https://goqr.me/api/) para gerar o QRCod
 
 ## 3. Planejamento
 
-Utilizamos a feramenta do Github, chamada Github Projects para o nosso planejamento com o método Kanban.
+Utilizamos a feramenta do Github :octocat:, chamada Github Projects para o nosso planejamento com o método Kanban.
 
-[Planning Github Projects](https://github.com/users/dodojoy/projects/3)
-
+:octocat: [Planning Github Projects](https://github.com/users/dodojoy/projects/3) 
 ![Captura de tela de 2022-11-30 14-38-59](https://user-images.githubusercontent.com/57406239/204869213-cab3dcb2-0cb0-47cb-8d76-1ba31e143c17.png)
 
 

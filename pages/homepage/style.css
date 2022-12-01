@@ -55,6 +55,7 @@
 .homepage-main{
     display: flex;
     flex-direction: row;
+    margin-bottom: 5vh;
 }
 
 .nav-filter-homepage{
@@ -137,6 +138,8 @@
     background-color: #53565A;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-homepage img{

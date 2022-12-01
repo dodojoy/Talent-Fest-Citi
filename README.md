@@ -1,4 +1,4 @@
-<div align:"center">># Talent Fest: Desafio Citi :blue_heart: :tada:
+<div align:"center"> **Talent Fest: Desafio Citi :blue_heart: :tada:**
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
 Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 

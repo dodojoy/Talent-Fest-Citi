@@ -19,7 +19,7 @@ export default () => {
                         <p id='txtMsg'>Mensagem de pagamento</p>
                     </div>
                     <div>
-                        <p>Nome do comprador: ${localStorage.getItem('name')}</p>
+                        <p>Nome do comprador: ${localStorage.getItem('username')}</p>
                         <p>Produto: ${localStorage.getItem('name-product')}</p>
                         <p>Valor final: R$ ${localStorage.getItem('price-product')}</p>
 

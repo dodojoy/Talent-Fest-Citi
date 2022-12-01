@@ -52,21 +52,17 @@
     margin: 5rem;
 }
 
-#send{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -15vh 0 5vh;
-}
-
 #btnSend {
-    width:15%;
     background-color: #002D72;
     border: none;
     font-size: 1.3rem;
     color: #FFFFFF;
     padding: 0.3rem 1rem;
     border-radius: 10px;
+}
+
+.or-copy-tag{
+    margin-bottom: 2vh;
 }
 
 #btnSend:hover {

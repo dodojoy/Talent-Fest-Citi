@@ -39,7 +39,7 @@
 
 ## 1. Introdução
 
-Neste  desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória, trabalhamos com a criação de um e-commerce onde ao processar o pagamento, possa gerar um código QRCode contendo os dados do cliente, as informações de preço, os dados do produto para o envio do pagamento e ser processado, em seguida que esse pagamento possa ser processado ou enviado para ser pago por outras instituições.
+Neste  desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória, trabalhamos com a criação de um e-commerce onde ao processar o pagamento, possa gerar um código QRCode contendo os dados do cliente, as informações de preço, os dados do produto para o envio do pagamento e seu processamento, em seguida que esse código possa enviado para ser pago por outras instituições.
 
 
 ## 2. Resumo do projeto

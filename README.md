@@ -7,7 +7,7 @@
    :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac), <br>
    :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), <br>
    :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih) e <br>
-   :woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm).<br>
+   :woman_technologist: Polyana Magalhães [polyanagm](https://github.com/polyanagm).<br>
 
 
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>

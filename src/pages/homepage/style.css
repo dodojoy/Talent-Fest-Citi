@@ -257,6 +257,11 @@
     .nav-filter-side {
         margin-top: 10vh;
     }
+
+    .menu {
+        width: 20vw;
+        text-align: center;
+    }
 }
 .none {
     display: none;

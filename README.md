@@ -1,10 +1,24 @@
-# Talent Fest: Desafio Citi :blue_heart: :tada:
+<div align:"center">># Talent Fest: Desafio Citi :blue_heart: :tada:
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
 Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
 :woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm) e :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih).
 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="Node.js" style="height: 30px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 30px;"/> 
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="height: 30px;"/>
 
+  <br>
+
+  **Status do Projeto:** _Concluído_ 
+    
+  O **resultado final** pode ser visitado [aqui](https:)!!
+
+</div>
 ## Índice
 
 * [1. Introdução](#1-introducao)
@@ -18,14 +32,14 @@ Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](h
 
 ## 1. Introdução
 
-Neste  desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória, trabalhamos com a criação de um e-commerce onde ao processar o pagamento possa gerar um código QRCode contendo os dados do cliente e as informações de preço e os dados do produto para o envio do pagamento para ser processado e esse pagamento ser processado ou enviado para ser pago por outras instituições.
+Neste  desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória, trabalhamos com a criação de um e-commerce onde ao processar o pagamento, possa gerar um código QRCode contendo os dados do cliente, as informações de preço, os dados do produto para o envio do pagamento e ser processado, em seguida que esse pagamento possa ser processado ou enviado para ser pago por outras instituições.
 
 
 ## 2. Resumo do projeto
 O projeto CitiShop :computer: é um e-commerce que foi criado à partir do desafio proposto pelo CitiBank no Hackaton da turma 008 da Laboratória.
 O principal desafio era o de consumir uma API que fizesse o processamento de um pedido, gerando um QRCode para pagamento :credit_card: :dollar:.
 
-O projeto foi desenvolvido em um squad de 5 pessoas, durante APENAS 3 DIAS de desenvolvimento. E as principais ferramentas utilizadas durante o processo foram: Github Projects, para o planning e divisão das tasks; Figma, para o processo de prototipação de alta fidelidade; Metroretro para as sessões de retrospectiva diárias; Zoom Meetings, para sessões de pair programming e encontros gerais.
+O projeto foi desenvolvido em um squad de 5 pessoas, durante APENAS 3 DIAS. E as principais ferramentas utilizadas durante o processo foram: Github Projects, para o planning e divisão das tasks; Figma, para o processo de prototipação de alta fidelidade; Metroretro para as sessões de retrospectiva diárias; Zoom Meetings, para sessões de pair programming e encontros gerais.
 
 Além disso, utilizamos o conjunto de serviços de hospedagem Firebase. Para manipularmos a parte de backend da aplicação, utilizamos os serviços Firebase Authentication - para fazer o processo de autenticação de usuários, e o Cloud Firestore - para a criação e manutenção do nosso banco de dados.
 
@@ -34,15 +48,13 @@ Também usamos a API [QRCode Generator](https://goqr.me/api/) para gerar o QRCod
 
 ## 3. Planejamento
 
-Utilizamos a feramenta do Github :octocat:, chamada Github Projects para o nosso planejamento com o método Kanban.
+Utilizamos o método Kanban.
 
 :octocat: [Planning Github Projects](https://github.com/users/dodojoy/projects/3) 
 ![Captura de tela de 2022-11-30 14-38-59](https://user-images.githubusercontent.com/57406239/204869213-cab3dcb2-0cb0-47cb-8d76-1ba31e143c17.png)
 
 
 ## 4. Prototipo
-Utilizamos a ferramenta [Figma](https://www.figma.com/) para fazer a prototipação e alguns testes iniciais de usabilidade.
-
 
 **HOMEPAGE**<br>
 Tela inicial onde o usuario pode ver os produtos disponiveis na loja.

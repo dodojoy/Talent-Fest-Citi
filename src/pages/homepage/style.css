@@ -174,7 +174,23 @@
     display: none;
 }
 
+
+.teste {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    #menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .div-menu{
         display: block;
     }
@@ -190,13 +206,15 @@
         width: 50%;
         margin: 0.2rem;
     }
-
+    
     .btn-menu:hover{
         cursor: pointer;
     }
 
     .nav-filter-homepage{
         display: none;
+        width: 100%;
+        height: 100vh;
     }
 
     .nav-filter-homepage.active{
@@ -235,6 +253,11 @@
   }
 }
 
+@media (min-width: 1024px) {
+    .nav-filter-side {
+        margin-top: 10vh;
+    }
+}
 .none {
     display: none;
 }

@@ -25,10 +25,10 @@ export default () => {
                     </div>
 
                     <div id='divQrCode' class='div-qr-code'></div>
+                    <span class='or-copy-tag'>ou</span>
+                    <button id='btnSend'>Enviar <img id='iconSend'src='assets/send.png' alt='Botão branco de enviar'></button>
                 </main>
 
-                <div id='send'><button id='btnSend'>Enviar <img id='iconSend'src='assets/send.png' alt='Botão branco de enviar'></button>
-                </div>
                 
 
                 <footer class='footer-homepage'>
@@ -62,11 +62,9 @@ export default () => {
         </div>
     `;
   containerQrCode.innerHTML = qrCode;
-  const btnSend = container.querySelector('#send');
+  const btnSend = container.querySelector('#btnSend');
 
-  btnSend.addEventListener ("click", () => {
-    alert("Código copiado com sucesso!")
-  });
+  btnSend.addEventListener('click', () => alert('Código copiado com sucesso!'));
 
   return container;
 };

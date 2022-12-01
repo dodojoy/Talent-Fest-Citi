@@ -104,25 +104,25 @@ Página inical da nossa versão final! Confira o site completo pelo link: [aqui]
 
 ### 7.1 Ferramentas utilizadas
   
-    ✔️ GitHub Projects
-    ✔️ Figma
-    ✔️ Vs Code
+   - ✔️ GitHub Projects
+   - ✔️ Figma
+   - ✔️ Vs Code
    - ✔️ ZOOM Meetings
    - ✔️ Firebase Auth
    - ✔️ Cloud Firestore
    - ✔️ API QRCode Generator
-   - ✔️ >Metroretro
+   - ✔️ Metroretro
 
   
 ### 7.2 Tech Skills
-<ul>
- <li>Vanilla Javascript
- <li>CSS3
- <li>HTML5
- <li>Git e Github
- <li>Consumo de API
- <li>Responsividade
- <li>Bando de dados
- <li>NOSQL
- <li>SPA (Single Page Application)
-</ul>
+
+ - ✔️ Vanilla Javascript
+ - ✔️ CSS3
+ - ✔️ HTML5
+ - ✔️ Git e Github
+ - ✔️ Consumo de API
+ - ✔️ Responsividade
+ - ✔️ Bando de dados
+ - ✔️ NOSQL
+ - ✔️ SPA (Single Page Application)
+

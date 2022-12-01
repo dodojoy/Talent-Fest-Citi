@@ -1,4 +1,5 @@
-<div align:"center"> **Talent Fest: Desafio Citi :blue_heart: :tada:**
+<div align:"center">
+<h1> Talent Fest: Desafio Citi :blue_heart: :tada: </h1>
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
 Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
@@ -19,9 +20,10 @@ Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](h
   O **resultado final** pode ser visitado [aqui](https:)!!
 
 </div>
+
 ## Índice
 
-* [1. Introdução](#1-introducao)
+* [1. Introdução](#1-introdução)
 * [2. Resumo do projeto](#2-resumo-do-projeto) 
 * [3. Planejamento](#3-planejamento)
 * [4. Protótipo](#4-prototipo)
@@ -48,7 +50,7 @@ Também usamos a API [QRCode Generator](https://goqr.me/api/) para gerar o QRCod
 
 ## 3. Planejamento
 
-Utilizamos o método Kanban.
+Utilizamos o método [Kanban](https://www.alura.com.br/artigos/metodo-kanban).
 
 :octocat: [Planning Github Projects](https://github.com/users/dodojoy/projects/3) 
 ![Captura de tela de 2022-11-30 14-38-59](https://user-images.githubusercontent.com/57406239/204869213-cab3dcb2-0cb0-47cb-8d76-1ba31e143c17.png)
@@ -84,16 +86,28 @@ Página com as informações das desenvolvedoras da aplicação.
 
 
 ## 6. Ferramentas e Tech Skills
+
+### 6.1 Ferramentas utilizadas
+  <ul>
+    <li>GitHub Projects
+    <li>Figma
+    <li>Vs Code
+    <li> ZOOM Meetings
+    <li>Firebase Auth
+    <li>Cloud Firestore
+    <li>API QRCode Generator
+    <li>Metroretro
+  </ul>
+  
+### 6.2 Tech Skills
 <ul>
-<li>GitHub Projects
-<li>Figma
-<li>Vs Code
-<li> ZOOM Meetings
-<li>Firebase Auth
- <li>Cloud Firestore
- <li>API QRCode Generator
- <li>Metroretro
  <li>Vanilla Javascript
  <li>CSS3
  <li>HTML5
  <li>Git e Github
+ <li>Consumo de API
+ <li>Responsividade
+ <li>Bando de dados
+ <li>NOSQL
+ <li>SPA (Single Page Application)
+</ul>

@@ -1,4 +1,5 @@
-<div align:"center">># Talent Fest: Desafio Citi :blue_heart: :tada:
+<div align:"center">
+<h1> Talent Fest: Desafio Citi :blue_heart: :tada: </h1>
 
 Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
 Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac),<br> 
@@ -19,7 +20,7 @@ Projeto desenvolvido pelo squad: :woman_technologist: Joyce Teodoro [@dodojoy](h
   O **resultado final** pode ser visitado [aqui](https:)!!
 
 </div>
-## Índice
+<h2> Índice </h2>
 
 * [1. Introdução](#1-introducao)
 * [2. Resumo do projeto](#2-resumo-do-projeto) 
@@ -84,6 +85,8 @@ Página com as informações das desenvolvedoras da aplicação.
 
 
 ## 6. Ferramentas e Tech Skills
+
+### 6.1 Ferramentas utilizadas
 <ul>
 <li>GitHub Projects
 <li>Figma
@@ -93,7 +96,17 @@ Página com as informações das desenvolvedoras da aplicação.
  <li>Cloud Firestore
  <li>API QRCode Generator
  <li>Metroretro
+ </ul>
+ 
+ ### 6.2 Tech Skills
+ <ul>
  <li>Vanilla Javascript
  <li>CSS3
  <li>HTML5
  <li>Git e Github
+ <li>Consumo de API
+ <li> Banco de Dados
+ <li> Responsividade
+ <li>SPA (Single Page Application)
+ </ul>
+ 

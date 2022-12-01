@@ -104,9 +104,9 @@ Página inical da nossa versão final! Confira o site completo pelo link: [aqui]
 
 ### 7.1 Ferramentas utilizadas
   
-   - ✔️ GitHub Projects
-   - ✔️ Figma
-   - ✔️ Vs Code
+    ✔️ GitHub Projects
+    ✔️ Figma
+    ✔️ Vs Code
    - ✔️ ZOOM Meetings
    - ✔️ Firebase Auth
    - ✔️ Cloud Firestore

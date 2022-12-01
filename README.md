@@ -1,13 +1,13 @@
 
 <h1> Talent Fest: Desafio Citi :blue_heart: :tada: </h1>
-<div align-items="center">
+<div align="center">
    Desafio proposto pela empresa Citi Brasil às alunas da turma 008 da Laboratória.<br>
    Projeto desenvolvido pelo squad: <br> 
    :woman_technologist: Andrea Santos [@Canzua](https://github.com/Canzua), <br>
    :woman_technologist: Anna Clara [@andradeannac](https://github.com/andradeannac), <br>
    :woman_technologist: Joyce Teodoro [@dodojoy](https://github.com/dodojoy), <br>
    :woman_technologist: Michelle Santana [@asmih](https://github.com/asmih) e <br>
-   :woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm).
+   :woman_technologist: Polyana Magalhães [@polyanagm](https://github.com/polyanagm).<br>
 
 
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 30px;"/>
@@ -19,11 +19,11 @@
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" style="height: 30px;"/>
   </div>
   <br>
-
-  **Status do Projeto:** _Concluído_ 
+  <div align="center">
+  **Status do Projeto:** Concluído!
     
   O **resultado final** pode ser visitado [aqui](https://dodojoy.github.io/talent-fest-citi/)!!
-
+  </div>
 
 
 ## Índice

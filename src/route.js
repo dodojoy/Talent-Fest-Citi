@@ -18,12 +18,12 @@ function loadRoots() {
     case '#register':
       main.appendChild(register());
       break;
-      case '#developers':
-        main.appendChild(developers());
-        break;
-      case '#qrcode':
-        main.appendChild(qrcode());
-        break;
+    case '#developers':
+      main.appendChild(developers());
+      break;
+    case '#qrcode':
+      main.appendChild(qrcode());
+      break;
     default:
       main.appendChild(homepage());
   }

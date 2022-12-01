@@ -113,7 +113,7 @@ export default () => {
         if (logged) {
           window.location.hash = '#qrcode';
         } else {
-          window.location.hash = '#login';
+          window.location.hash = '#register';
         }
       });
       localStorage.setItem('price-product', name.dataset.priceProduct);
